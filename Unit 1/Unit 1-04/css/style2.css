@@ -9,3 +9,32 @@ h1 {
     text-align: center;
 }
 
+p {
+    background-color: #e5ff00;
+}
+
+ul {
+    color: beige;
+}
+
+ul li::before {
+    content: "✅";
+}
+
+table {
+    border: solid thin;
+}
+
+th {
+    height: 2rem;
+    background: red;
+    border: 1px solid white;
+    text-align: left;
+}
+
+td {
+    height: 2rem;
+    background: lightblue;
+    border: 1px solid black;
+    text-align: center;
+}
