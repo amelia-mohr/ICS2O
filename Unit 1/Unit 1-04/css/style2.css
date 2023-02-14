@@ -16,13 +16,10 @@ p {
 
 ul {
   color: beige;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 ul li::before {
   content: "✅";
-  text-align: center;
 }
 
 table {
