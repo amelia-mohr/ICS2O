@@ -16,7 +16,8 @@ p {
 
 ul {
   color: beige;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul li::before {
@@ -26,7 +27,8 @@ ul li::before {
 
 table {
   border: solid thin;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th {
