@@ -1,44 +1,44 @@
 body {
-    background-color: green;
+  background-color: green;
 }
 
 h1 {
-    background-color: rgb(255 0 221);
-    color: hsl(239deg 50% 47%);
-    padding: 40px;
-    text-align: center;
+  background-color: rgb(255 0 221);
+  color: hsl(239deg 50% 47%);
+  padding: 40px;
+  text-align: center;
 }
 
 p {
-    background-color: #e5ff00;
-    text-align: center;
+  background-color: #e5ff00;
+  text-align: center;
 }
 
 ul {
-    color: beige;
-    text-align: center;
+  color: beige;
+  text-align: center;
 }
 
 ul li::before {
-    content: "✅";
-    text-align: center;
+  content: "✅";
+  text-align: center;
 }
 
 table {
-    border: solid thin;
-    text-align: center;
+  border: solid thin;
+  text-align: center;
 }
 
 th {
-    height: 2rem;
-    background: red;
-    border: 1px solid white;
-    text-align: center;
+  height: 2rem;
+  background: red;
+  border: 1px solid white;
+  text-align: center;
 }
 
 td {
-    height: 2rem;
-    background: lightblue;
-    border: 1px solid black;
-    text-align: center;
+  height: 2rem;
+  background: lightblue;
+  border: 1px solid black;
+  text-align: center;
 }
