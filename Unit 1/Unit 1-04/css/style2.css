@@ -11,10 +11,12 @@ h1 {
 
 p {
     background-color: #e5ff00;
+    text-align: center;
 }
 
 ul {
     color: beige;
+    text-align: center;
 }
 
 ul li::before {
@@ -23,13 +25,14 @@ ul li::before {
 
 table {
     border: solid thin;
+    text-align: center;
 }
 
 th {
     height: 2rem;
     background: red;
     border: 1px solid white;
-    text-align: left;
+    text-align: center;
 }
 
 td {
