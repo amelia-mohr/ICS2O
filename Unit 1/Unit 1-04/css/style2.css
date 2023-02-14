@@ -21,6 +21,7 @@ ul {
 
 ul li::before {
     content: "✅";
+    text-align: center;
 }
 
 table {
