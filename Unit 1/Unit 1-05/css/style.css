@@ -9,9 +9,3 @@ h1 {
   text-align: center;
   color: lightcoral;
 }
-
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
