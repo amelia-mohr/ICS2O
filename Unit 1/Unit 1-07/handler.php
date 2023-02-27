@@ -15,6 +15,7 @@
         <title>MDL, Favicon, and PHP form</title>
     </head>
     <body>
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <?php
         $name = "";
         if ( isset( $_POST["name"] ) ){
