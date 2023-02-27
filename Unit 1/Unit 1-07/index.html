@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
   <head>
-    <title>Webpage</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Webpage with MDL, Favicon, and PHP form">
+    <meta name="keywords" content="isc2o">
+    <meta name="author" content="Amelia M">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-pink.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <title>MDL, Favicon, and PHP form</title>
   </head>
+
   <body>
-    <form action="welcome.php" method="post">
-      Name: <input type="text" name="name"><br>
-      E-mail: <input type="text" name="email"><br>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <h1>Hello, World!</h1>
+    <h2>Please enter a Username</h2>
+    <form action="handler.php" method="post">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="sample1" name="userName">
+        <label class="mdl-textfield__label" for="sample1">Name...</label>
+      </div>
       <input type="submit">
+        <button class="mdl-button mdl-js-button mdl-button--accent">
+          Submit
+        </button>
+      </input>
     </form>
   </body>
 </html>
