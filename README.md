@@ -8,5 +8,3 @@
 [Unit1-06:index.html](./Unit%201/Unit%201-06/index.html)
 <br>
 [Unit1-07:index.html](./Unit%201/Unit%201-07/index.html)
-<br>
-[Unit1-07:index2.html](./Unit%201/Unit%201-07/index2.html)
