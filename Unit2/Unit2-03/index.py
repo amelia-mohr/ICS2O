@@ -5,6 +5,4 @@ yes_no = input("Have you had your birthday this year yet? (yes or no): ")
 year = 2023 - age
 if yes_no == 'no':
     year = year-1
-if yes_no == 'yes':
-    pass
 print("Hello " + name + "! You were born in: " + str(year))
