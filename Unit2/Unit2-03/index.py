@@ -6,4 +6,3 @@ year = 2023 - age
 if yes_no == 'no':
     year = year-1
 print("Hello " + name + "! You were born in: " + str(year))
-

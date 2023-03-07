@@ -2,4 +2,5 @@ def myFunction(fname):
   mytext = "Hello " + fname + "!"
   return mytext
   
-print(myFunction("Amelia"))
+name = input("What is your name: ")
+print(myFunction(name))
