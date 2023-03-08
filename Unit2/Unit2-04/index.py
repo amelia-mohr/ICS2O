@@ -1,5 +1,10 @@
-for numbers in range(1,33): 
-    if numbers % 15 == 0.0:
+x = int(input("Start: "))
+y = int(input("to Finish: "))
+y = y + 1
+for numbers in range(x,y): 
+    if numbers == 0.0:
+        print(str(numbers) + " ZERO!!!")
+    elif numbers % 15 == 0.0:
         print(str(numbers) + " FizzBuzz")
     elif numbers % 3 == 0.0:
         print(str(numbers) + " Fizz")
