@@ -18,16 +18,25 @@
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <h1>Assignment #2!</h1>
         <h3>The area and circumference of a circle!</h3>
+        <p>The diameter of your circle is <span id="diameter"></span></p>
+        <p>The radius of your circle is <span id="radius"></span></p>
+        <p>The area of your circle is <span id="area"></span></p>
+        <p>And the circumference of your circle is <span id="circumference"></span></p>
+        
         <py-script>
             import requests
             url = "https://amelia-mohr.github.io/ICS2O/Assignments/Assignment2/assignment2b.html"
             d = {'diameter'}
 
             import math
-            r = diameter / 2
+            r = d / 2
             a = round(math.pi * (r ** 2), 2)
             c = round(2 * math.pi * r, 2)
+
+            pyscript.write("diameter", d)
+            pyscript.write("radius", r)
+            pyscript.write("area", a)
+            pyscript.write("circumference", c)
         </py-script>
-        <p></p>
     </body>
 </html>
