@@ -12,5 +12,3 @@
 [Unit2-01:index.html](./Unit2/Unit2-01/index.html)
 <br>
 [Assignment#2](./Assignments/Assignment2/assignment2b.html)
-<br>
-[Assignment#2:index.html](./Assignments/Assignment2/index.html)
