@@ -17,13 +17,13 @@
     <body>
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <?php
-        $d = (int)"";
+        $d = intval("");
         if (isset($_POST["d"])) {
             $d = $_POST["d"];
         }
-        $r = $d / 2;
-        $a = round(pi() * ($r ** 2), 2);
-        $c = round(2 * pi() * $r, 2);
+        $r = intval($d / 2);
+        $a = intval(round(pi() * ($r ** 2), 2));
+        $c = intval(round(2 * pi() * $r, 2));
         ?>
         
         <h1>Assignment #2!</h1>
