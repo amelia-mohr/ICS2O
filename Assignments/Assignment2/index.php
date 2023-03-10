@@ -23,7 +23,7 @@
         }
         $r = $d / 2;
         $a = round(pi() * ($r ** 2), 2);
-        $c = round(2 * pi() * r, 2);
+        $c = round(2 * pi() * $r, 2);
         ?>
         
         <h1>Assignment #2!</h1>
