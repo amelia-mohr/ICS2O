@@ -16,17 +16,23 @@
     </head>
     <body>
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <?php
+        $d = "";
+        if (isset($_POST["d"])) {
+            $d = $_POST["d"];
+        }
+        $r = $d / 2
+        
+
+        ?>
+        
         <h1>Assignment #2!</h1>
         <h3>The area and circumference of a circle!</h3>
-        <p>Please enter a diameter for your circle: </p>
-        <form action="https://amelia-mohr.github.io/ICS2O/Assignments/Assignment2/index.html" method="post">
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2" name="d">
-              <label class="mdl-textfield__label" for="sample2">Number...</label>
-              <span class="mdl-textfield__error">Input is not a number!</span>
-            </div>
-            <br>
-            <button class="mdl-button mdl-js-button mdl-button--primary">Submit Form</button>              
-        </form>
+        <p>The diameter of your circle is <span></p>
+        <p>The radius of your circle is <span></p>
+        <p>The area of your circle is <span></p>
+        <p>And the circumference of your circle is <span></p>
+        
+        
     </body>
 </html>
