@@ -21,17 +21,17 @@
         if (isset($_POST["d"])) {
             $d = $_POST["d"];
         }
-        $r = $d / 2
-        
-
+        $r = $d / 2;
+        $a = round(pi() * ($r ** 2), 2);
+        $c = round(2 * pi() * r, 2);
         ?>
         
         <h1>Assignment #2!</h1>
         <h3>The area and circumference of a circle!</h3>
-        <p>The diameter of your circle is <span></p>
-        <p>The radius of your circle is <span></p>
-        <p>The area of your circle is <span></p>
-        <p>And the circumference of your circle is <span></p>
+        <p>The diameter of your circle is <?=$d?></p>
+        <p>The radius of your circle is <?=$r?></p>
+        <p>The area of your circle is <?=$a?></p>
+        <p>And the circumference of your circle is <?=$c?></p>
         
         
     </body>
