@@ -32,7 +32,5 @@
         <p>The radius of your circle is <?=$r?></p>
         <p>The area of your circle is <?=$a?></p>
         <p>And the circumference of your circle is <?=$c?></p>
-        
-        
     </body>
 </html>
