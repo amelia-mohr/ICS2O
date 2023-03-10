@@ -17,7 +17,7 @@
     <body>
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <?php
-        $d = "";
+        $d = (int)"";
         if (isset($_POST["d"])) {
             $d = $_POST["d"];
         }
