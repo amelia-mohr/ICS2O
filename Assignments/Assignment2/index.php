@@ -28,9 +28,9 @@
         
         <h1>Assignment #2!</h1>
         <h3>The area and circumference of a circle!</h3>
-        <p>The diameter of your circle is <?=$d?></p>
-        <p>The radius of your circle is <?=$r?></p>
-        <p>The area of your circle is <?=$a?></p>
-        <p>And the circumference of your circle is <?=$c?></p>
+        <p>The diameter of your circle is: <?=$d?></p>
+        <p>The radius of your circle is: <?=$r?></p>
+        <p>The area of your circle is: <?=$a?></p>
+        <p>And the circumference of your circle is: <?=$c?></p>
     </body>
 </html>
