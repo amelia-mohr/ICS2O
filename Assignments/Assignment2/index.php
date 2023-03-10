@@ -28,6 +28,7 @@
         
         <h1>Assignment #2!</h1>
         <h3>The area and circumference of a circle!</h3>
+        <h5>The area and circumference are rounded to 2 decimal places.</h5>
         <p>The diameter of your circle is: <?=$d?></p>
         <p>The radius of your circle is: <?=$r?></p>
         <p>The area of your circle is: <?=$a?></p>
