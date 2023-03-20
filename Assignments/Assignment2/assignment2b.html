@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-pink.min.css">
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
@@ -16,46 +17,35 @@
     </head>
     <body>
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-        <style>
-            .demo-card-square.mdl-card {
-              width: 320px;
-              height: 210px;
-            }
-            .demo-card-square > .mdl-card__title {
-                color: #fff;
-                background: #E91C63
-            }
-            
-        </style>
-        <div style="margin-left: auto; margin-right: auto; margin-top: 25px; color: ;">
-            <span style="font-size: 45px; font-family: 'Times New Roman', Times, serif; text-decoration: underline;">Assignment #2!</span>
+        <div class="header">
+            <span class="title">Assignment #2!</span>
         </div>
-        <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif;">The area and circumference of a circle!</h3>
+        <h3 class="h3">The area and circumference of a circle!</h3>
         <center>
             <div class="demo-card-square mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title mdl-card--border">
-                  <h6 class="mdl-card__title-text" style="text-align: left; font-size: 20px; font-family: 'Times New Roman', Times, serif;">Please enter a diameter for your circle: </h6>
+                  <h6 class="mdl-card__title-text h6">Please enter a diameter for your circle: </h6>
                 </div>
                 <form action="./index.php" method="post">
                     <div class="mdl-textfield mdl-js-textfield mdl-card__supporting-text">
                       <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2" name="d">
-                      <label class="mdl-textfield__label" for="sample2" style="font-family: 'Times New Roman', Times, serif;">Number...</label>
-                      <span class="mdl-textfield__error" style="font-family: 'Times New Roman', Times, serif;">Input is not a number!</span>
+                      <label class="mdl-textfield__label form" for="sample2">Number...</label>
+                      <span class="mdl-textfield__error form">Input is not a number!</span>
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-js-button mdl-button--primary" style="font-family: 'Times New Roman', Times, serif;">Submit Form</button>
+                        <button class="mdl-button mdl-js-button mdl-button--primary form">Submit Form</button>
                     </div>              
                 </form> 
             </div>
         </center>
         <br>
-        <p style="text-align: center; font-family: 'Times New Roman', Times, serif;">
+        <p class="para">
             Link to <a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2b.html">CODE</a> for this (HTML) page.
             <br>
             Link to <a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/index.php">CODE</a> for PHP page.
             <br>
             Link to <a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2a.py">CODE</a> for Python program.
         </p>
-        <img src="./images/circle.png" alt="Circle Image" style="display: block; margin-left: auto; margin-right: auto;">
+        <img src="./images/circle.png" alt="Circle Image" class="img">
     </body>
 </html>
