@@ -21,13 +21,15 @@
         if (isset($_POST["d"])) {
             $d = $_POST["d"];
         }
-        settype($d, 'integer');
+        settype($d, 'float');
         $r = $d / 2;
         settype($r, 'float');
         $a = round(pi() * ($r ** 2), 2);
         $c = round(2 * pi() * $r, 2);
-        settype($a, 'float');
-        settype($c, 'float');
+        settype($d, 'string');
+        settype($r, 'string');
+        settype($a, 'string');
+        settype($c, 'string');
         ?>
         
         <h1>Assignment #2!</h1>
