@@ -31,7 +31,6 @@
         settype($a, 'string');
         settype($c, 'string');
         ?>
-        
         <h1>Assignment #2!</h1>
         <h3>The area and circumference of a circle!</h3>
         <h5>The area and circumference are rounded to 2 decimal places.</h5>
