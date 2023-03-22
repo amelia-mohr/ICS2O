@@ -1,21 +1,20 @@
 body {
-  background-color: powderblue;
+  background-color: deeppink;
 }
 
 h1 {
-  background-color: rgb(255 165 0);
+  background-color: darkred;
   color: #3cb472;
   padding: 40px;
-  text-align: center;
+  text-align: right;
 }
 
 #para1 {
-  background-color: #f0f;
-  text-align: center;
+  background-color: aliceblue;
+  text-align: right;
 }
 
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 100%;
 }
