@@ -1,6 +1,6 @@
 import math
 
-d = float(input("Please enter a diameter: "))
+d = float(input("Please enter a diameter (numbers (not text) only please): "))
 r = round(d / 2, 2)
 area = round(math.pi * (r ** 2), 2)
 circumference = round(2 * math.pi * r, 2)
