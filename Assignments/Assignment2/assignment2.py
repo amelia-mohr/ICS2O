@@ -1,6 +1,18 @@
 import math
 
-d = float(input("Please enter a diameter (numbers (not text) only please): "))
+while True: 
+    try: 
+        d = float(input("Please enter a diameter: "))
+        if d<0:
+            print("Please enter a POSITIVE number!")
+        elif d=0:
+            print("Please enter a NUMBER!")
+        continue
+    
+    except ValueError:
+        print("Please enter a NUMBER!")
+        continue
+
 r = round(d / 2, 2)
 area = round(math.pi * (r ** 2), 2)
 circumference = round(2 * math.pi * r, 2)
