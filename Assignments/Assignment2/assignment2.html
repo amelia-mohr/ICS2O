@@ -24,13 +24,25 @@
         <center>
             <div class="demo-card-square mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title mdl-card--border">
-                  <h6 class="mdl-card__title-text h6">Please enter a diameter for your circle: </h6>
+                  <h6 class="mdl-card__title-text h6">Please enter a diameter and a unit for your circle: </h6>
                 </div>
                 <form action="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/assignment2.php" method="post">
                     <div class="mdl-textfield mdl-js-textfield mdl-card__supporting-text">
                       <input class="mdl-textfield__input" type="text" id="sample2" name="d" pattern="^(?=.*[1-9])\d*(?:\.\d+)?$">
                       <label class="mdl-textfield__label form" for="sample2">Number...</label>
                       <span class="mdl-textfield__error form">Input is not a positive number!</span>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-card__supporting-text">
+                      <input type="text" list="units" name="u" id="unit">
+                      <label class="mdl-textfield__label form" for="unit">Number...</label>
+                      <datalist id="units">
+                        <option value="mm">
+                        <option value="cm">
+                        <option value="m">
+                        <option value="in">
+                        <option value="ft">
+                        <option value="yd">
+                      </datalist>
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <button class="mdl-button mdl-js-button mdl-button--primary form">Submit Form</button>
