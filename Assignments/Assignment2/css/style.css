@@ -46,5 +46,13 @@
 }
 
 .bottom {
-  font-family: 'Times New Roman', Times, serif;
+  background-color: #00695e;
+}
+
+.bottom-title-text {
+  color: #fff;
+}
+
+.bottom-text {
+  color: #dedede;
 }

@@ -64,12 +64,12 @@
         <img src="./images/circle.png" alt="Circle Image" class="img">
         <br>
         <br>
-        <footer class="mdl-mega-footer bottom" style="background-color: #00695e;">
+        <footer class="mdl-mega-footer bottom">
           <div class="mdl-mega-footer__middle-section">
             <div class="mdl-mega-footer__drop-down-section">
               <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer__heading">ICS2O</h1>
-              <ul class="mdl-mega-footer__link-list">
+              <h1 class="mdl-mega-footer__heading bottom-title-text">ICS2O</h1>
+              <ul class="mdl-mega-footer__link-list bottom-text">
                 <li>Assignment #2</li>
                 <li>Part B</li>
                 <li>Amelia Mohr</li>
@@ -78,8 +78,8 @@
             
             <div class="mdl-mega-footer__drop-down-section">
               <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer__heading">Links</h1>
-              <ul class="mdl-mega-footer__link-list">
+              <h1 class="mdl-mega-footer__heading bottom-title-text">Links</h1>
+              <ul class="mdl-mega-footer__link-list bottom-text">
                 <li><a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/assignment2.html">Back to Form (HTML) page</a></li>
                 <li><a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/index.html">What PHP page should look like (in an HTML file)</a></li>
                 <li><a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/assignment2.php">Actual PHP file</a></li>
@@ -88,8 +88,8 @@
         
             <div class="mdl-mega-footer__drop-down-section">
               <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer__heading">CODE</h1>
-              <ul class="mdl-mega-footer__link-list">
+              <h1 class="mdl-mega-footer__heading bottom-title-text">CODE</h1>
+              <ul class="mdl-mega-footer__link-list bottom-text">
                 <li><a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.html">For Form (HTML) page</a></li>
                 <li><a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.php">For PHP page</a></li>
                 <li><a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.py">For Python program</a></li>
