@@ -57,9 +57,9 @@
         </center>
         <br>
         <p class="para">
-            <a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/assignment2.html">LINK</a> back to Form (HTML) page.
+            Link <a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/assignment2.html">BACK</a> to Form (HTML) page.
             <br>
-            Link to <a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.html">CODE</a> for this (HTML) page.
+            Link to <a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.html">CODE</a> for Form (HTML) page.
             <br>
             Link to <a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.php">CODE</a> for PHP page.
             <br>
