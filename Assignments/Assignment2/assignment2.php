@@ -79,7 +79,7 @@
             
             <div class="mdl-mega-footer__drop-down-section">
               <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer__heading bottom-title-text">Links</h1>
+              <h1 class="mdl-mega-footer__heading bottom-title-text">LINKS</h1>
               <ul class="mdl-mega-footer__link-list bottom-text">
                 <li><a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/assignment2.html">Back to Form (HTML) page</a></li>
                 <li><a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/index.html">What PHP page should look like (in an HTML file)</a></li>
