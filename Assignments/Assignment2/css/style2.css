@@ -37,9 +37,9 @@
 .results {
   text-align: left;
   font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
-  color: black;
-  padding-left: 10px;
+  font-size: 17px;
+  color: rgba(0,0,0,.87);
+  margin: auto;
 }
 
 .para {
