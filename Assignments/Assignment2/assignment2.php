@@ -31,6 +31,7 @@
         settype($r, 'float');
         $a = round(pi() * ($r ** 2), 2);
         $c = round(2 * pi() * $r, 2);
+        settype($u, 'string');
         settype($d, 'string');
         settype($r, 'string');
         settype($a, 'string');
