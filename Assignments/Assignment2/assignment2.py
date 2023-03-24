@@ -13,7 +13,7 @@ while not finished:
         print("All results (except for the diameter) are rounded to 2 decimal places.")
         print("The diameter of your circle is: " + str(d) + " " + u)
         print("The radius of your circle is: " + str(r) + " " + u)
-        print("The area of your circle is: " + str(a) + " " + u)
+        print("The area of your circle is: " + str(a) + " " + u + "²")
         print("And the circumfrence of your circle is: " + str(c) + " " + u)
         finished = True
     except ValueError:
