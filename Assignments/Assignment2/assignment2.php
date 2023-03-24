@@ -42,7 +42,7 @@
                 <div class="mdl-card__title mdl-card--border">
                   <h6 class="mdl-card__title-text h6">All results (except for the diameter) are rounded to 2 decimal places.</h6>
                 </div>
-                <div class="mdl-card__supporting-text">
+                <div class="mdl-textfield mdl-js-textfield mdl-card__supporting-text">
                     <p class="results">
                     The diameter of your circle is: <?=$d?>
                     <br>
