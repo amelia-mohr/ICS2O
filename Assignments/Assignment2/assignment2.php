@@ -22,6 +22,10 @@
         if (isset($_POST["d"])) {
             $d = $_POST["d"];
         }
+        $u = "";
+        if (isset($_POST["u"])) {
+            $u = $_POST["u"];
+        }
         settype($d, 'float');
         $r = $d / 2;
         settype($r, 'float');
@@ -44,27 +48,54 @@
                 </div>
                 <div class="mdl-card__supporting-text">
                     <p class="results">
-                    The diameter of your circle is: <?=$d?>
+                    The diameter of your circle is: <?=$d, " ", $u?>
                     <br>
-                    The radius of your circle is: <?=$r?>
+                    The radius of your circle is: <?=$r, " ", $u?>
                     <br>
-                    The area of your circle is: <?=$a?>
+                    The area of your circle is: <?=$a, " ", $u?><sup>2</sup>
                     <br>
-                    And the circumference of your circle is: <?=$c?>
+                    And the circumference of your circle is: <?=$c, " ", $u?>
                     </p>
                 </div>
             </div>
         </center>
         <br>
-        <p class="para">
-            Link <a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/assignment2.html">BACK</a> to Form (HTML) page.
-            <br>
-            Link to <a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.html">CODE</a> for Form (HTML) page.
-            <br>
-            Link to <a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.php">CODE</a> for PHP page.
-            <br>
-            Link to <a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.py">CODE</a> for Python program.
-        </p>
+        <br>
         <img src="./images/circle.png" alt="Circle Image" class="img">
+        <br>
+        <br>
+        <footer class="mdl-mega-footer bottom" style="background-color: #00695e;">
+          <div class="mdl-mega-footer__middle-section">
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">ICS2O</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li>Assignment #2</li>
+                <li>Part B</li>
+                <li>Amelia Mohr</li>
+              </ul>
+            </div>
+            
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">Links</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/assignment2.html">Back to Form (HTML) page</a></li>
+                <li><a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/index.html">What PHP page should look like (in an HTML file)</a></li>
+                <li><a href="http://amelia.ics2o.ca/ICS2O/Assignments/Assignment2/assignment2.php">Actual PHP file</a></li>
+              </ul>
+            </div>
+        
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">CODE</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.html">For Form (HTML) page</a></li>
+                <li><a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.php">For PHP page</a></li>
+                <li><a href="https://github.com/amelia-mohr/ICS2O/blob/main/Assignments/Assignment2/assignment2.py">For Python program</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
     </body>
 </html>

@@ -42,14 +42,13 @@
   margin: auto;
 }
 
-.para {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-}
-
 .img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   size: auto;
+}
+
+.bottom {
+  font-family: 'Times New Roman', Times, serif;
 }
