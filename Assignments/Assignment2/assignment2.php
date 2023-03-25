@@ -27,7 +27,7 @@
       $u = $_POST["u"];
     }
     settype($d, 'float');
-    $r = $d / 2;
+    $r = round($d / 2, 2);
     settype($r, 'float');
     $a = round(pi() * ($r ** 2), 2);
     $c = round(2 * pi() * $r, 2);
