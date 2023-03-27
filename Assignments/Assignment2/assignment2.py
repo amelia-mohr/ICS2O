@@ -7,10 +7,11 @@ while not finished:
         if d <= 0:
             raise ValueError
         u = str(input("Please enter a unit (ex. cm, ft, etc.): "))
+        def round_half_up(n, y):
+            multiplier = 10 ** y
+            return math.floor(n*multiplier + 0.5) / multiplier
         r = str(d / 2)
-        if r[len(r)-1] == 5:
-            r = r[len(r)-1] + 1
-            print(r)
+        print(round_half_up(0.285, 2))
         finished = True
     except ValueError:
         print("Please enter a POSITIVE NUMBER!")
