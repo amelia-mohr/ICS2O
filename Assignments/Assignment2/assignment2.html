@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Assignment #2">
-    <meta name="keywords" content="isc2o">
+    <meta name="keywords" content="ics2o">
     <meta name="author" content="Amelia M">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
