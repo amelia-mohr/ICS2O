@@ -20,11 +20,11 @@
     <?php
     $d = "";
     if (isset($_POST["d"])) {
-      $d = $_POST["d"];
+        $d = $_POST["d"];
     }
     $u = "";
     if (isset($_POST["u"])) {
-      $u = $_POST["u"];
+        $u = $_POST["u"];
     }
     settype($d, 'float');
     $r = round($d / 2, 2);
