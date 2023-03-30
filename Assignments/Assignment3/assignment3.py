@@ -86,7 +86,6 @@ while not finished:
         print("Do you want another pizza?")
         more = input("Answer here (yes/no): ")
         if more == 'yes':
-            price = round(decimal.Decimal(price), 2)
             #pizzas.append(price)
             #for x in pizzas:
                 #print("$" + str(x))
