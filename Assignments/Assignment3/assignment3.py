@@ -1,6 +1,7 @@
 import decimal
 decimal.getcontext().rounding = decimal.ROUND_HALF_UP
-pizzas = []
+p = ()
+pizzas = list(p)
 scost = float(0)
 tcost = float(0)
 pretotal = float(0)
@@ -99,7 +100,9 @@ def more():
         else:
             print("Please enter 'y' for yes or 'n' for no.")
 
-psum = float(sum(pizzas))
+p = tuple(pizzas)
+
+psum = float(sum(p))
 
 tax = round(decimal.Decimal(float(psum) * 0.13), 2)
 final = round(decimal.Decimal(float(psum) * 1.13), 2)
