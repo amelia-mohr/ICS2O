@@ -1,11 +1,6 @@
 import decimal
 decimal.getcontext().rounding = decimal.ROUND_HALF_UP
 pizzas = []
-scost = float(0)
-tcost = float(0)
-pretotal = float(0)
-tax = float(0)
-total = float(0)
 
 def psize():
     print("Do you want a Large ($6.00) or Extra Large ($10.00) pizza?")
@@ -56,28 +51,35 @@ def toppings():
         tcost = float(0)
     return tcost
 
-def pretotal():
-    price = psize() + toppings()
-    pretotal = round(decimal.Decimal(str(price)), 2)
-    pizzas.append(pretotal)
-    return pretotal
-
 def remove():
+    print("Your Items:")
+    y = 0
+    for x in pizzas:
+        y = y + 1
+        print("   Item " + str(y) + " - $" + str(x))
     print("Would you like to remove a pizza?")
     finished = False
     while not finished:
         yorn = input("   Type 'y' for yes or 'n' for no: ")
         if yorn == 'y':
-            print("Your Items:")
-            y = 0
-            for x in pizzas:
-                y = y + 1
-                print("   Item " + str(y) + "- $" + str(x))
-            z = int(input("Please enter the number of the item you would like to remove: "))
-            z = z - 1
-            pizzas.pop(z)
-            print(more())
-            print(remove())
+            complete = False
+            while not complete:
+                print("Your Items:")
+                y = 0
+                for x in pizzas:
+                    y = y + 1
+                    print("   Item " + str(y) + " - $" + str(x))
+                z = int(input("Please enter the number of the item you would like to remove: "))
+                w = z - 1
+                if w < 0 or w >= len(pizzas):
+                    print("Invalid item number!")
+                else: 
+                    print("You've removed: Item " + str(z))
+                    print("Price: $" + str(pizzas[w]))
+                    pizzas.pop(w)
+                    more()
+                    remove()
+                    complete = True
             finished = True
         elif yorn == 'n':
             pass
@@ -86,19 +88,35 @@ def remove():
             print("Please enter 'y' for yes or 'n' for no.")
 
 def more():
-    print("Would you like another pizza?")
+    print("Your Items:")
+    y = 0
+    for x in pizzas:
+        y = y + 1
+        print("   Item " + str(y) + " - $" + str(x))
+    print("Would you like to order another pizza?")
     finished = False
     while not finished:
         answer = input("   Type 'y' for yes or 'n' for no: ")
         if answer == 'y':
-            print("Your pre total is: $" + str(pretotal()))
-            print(more())
+            print("Cost: $" + str(pretotal()))
+            more()
             finished = True
         elif answer == 'n':
             pass
             finished = True
         else:
             print("Please enter 'y' for yes or 'n' for no.")
+
+def pretotal():
+    price = psize() + toppings()
+    pretotal = round(decimal.Decimal(str(price)), 2)
+    pizzas.append(pretotal)
+    return pretotal
+
+def subtotal():
+    price = sum(pizzas)
+    subtotal = round(decimal.Decimal(str(price)), 2)
+    return subtotal
 
 def tax():
     p = sum(pizzas)
@@ -113,13 +131,14 @@ def total():
 y = 0
 print("Hello!")
 print("Welcome to Pizza Code!")
-print("Your pre total is: $" + str(pretotal()))
-print(more())
-print(remove())
-print("Your final " + str(len(pizzas)) + " item(s) cost: ")
+print("Cost: $" + str(pretotal()))
+more()
+remove()
+print("Final " + str(len(pizzas)) + " Item(s): ")
 for x in pizzas:
     y = y + 1
-    print("   Item " + str(y) + "- $" + str(x))
-print("Your tax is: $" + str(tax()))
-print("And your total is: $" + str(total()))
+    print("   Item " + str(y) + " - $" + str(x))
+print("Subtotal: $" + str(subtotal()))
+print("Tax: $" + str(tax()))
+print("Total: $" + str(total()))
 print("Thank you for buying from Pizza Code!")
