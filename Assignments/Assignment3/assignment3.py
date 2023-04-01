@@ -1,6 +1,10 @@
 import decimal
+decimal.getcontext().rounding = decimal.ROUND_HALF_UP
 pizzas = []
 scost = float(0)
+tcost = float(0)
+pretotal = float(0)
+total = float(0)
 
 def psize():
     print("Do you want a Large ($6.00) or Extra Large ($10.00) pizza?")
@@ -16,100 +20,101 @@ def psize():
         else:
             print("Please enter 'l' for Large or 'xl' for Extra Large.")
     return scost
-        
+   
+def toppings():
+    ntopping = int(0)
+    for a in range(1, 5):
+        if a == 1:
+            ttype = 'Onions'
+        elif a == 2:
+            ttype = 'Pepperoni'
+        elif a == 3:
+            ttype = 'Bacon'
+        elif a == 4:
+            ttype = 'Olives'
+        print("Do you want " + ttype + " on your pizza?")
+        finished = False
+        while not finished:
+            topping = input("   Type 'y' for yes or 'n' for no: ")
+            if topping == 'y':
+                ntopping = ntopping + 1
+                finished = True 
+            elif topping == 'n':
+                finished = True
+            else: 
+                print("Please enter 'y' for yes or 'n' for no.")
+    if ntopping == 1:
+        tcost = float(1.00)
+    elif ntopping == 2:
+        tcost = float(1.75)
+    elif ntopping == 3:
+        tcost = float(2.50)
+    elif ntopping == 4:
+        tcost = float(3.35)
+    elif ntopping == 0:
+        tcost = float(0)
+    return tcost
 
+def pretotal():
+    price = psize() + toppings()
+    pretotal = round(decimal.Decimal(str(price)), 2)
+    pizzas.append(pretotal)
+    return pretotal
 
-while not finished:
-    try: 
-        print("Do you want a Large ($6.00) or Extra Large ($10.00) pizza?")
-        size = input("   Answer here (L/XL): ")
-        if size == 'L':
-            t = input("Do you want toppings (yes/no)? ")
-            if t == 'yes':
-                t1 = input("   Do you want Onions ($1.00) (yes/no)? ")
-                if t1 == 'yes':
-                    price = 6.00 + 1.00
-                elif t1 == 'no': 
-                    price = 6.00
-                t2 = input("   Do you want Pepperoni ($1.75) (yes/no)? ")
-                if t2 == 'yes':
-                    price = price + 1.75
-                elif t2 == 'no': 
-                    pass
-                t3 = input("   Do you want Bacon ($2.50) (yes/no)? ")
-                if t3 == 'yes':
-                    price = price + 2.50
-                elif t3 == 'no': 
-                    pass
-                t4 = input("   Do you want Olives ($3.35) (yes/no)? ")
-                if t4 == 'yes':
-                    price = price + 3.35
-                elif t4 == 'no': 
-                    pass
-            elif t == 'no':
-                price = 6.00
-        elif size == 'XL':
-            t = input("Do you want toppings (yes/no)? ")
-            if t == 'yes':
-                t1 = input("   Do you want Onions ($1.00) (yes/no)? ")
-                if t1 == 'yes':
-                    price = 10.00 + 1.00
-                elif t1 == 'no': 
-                    price = 10.00
-                t2 = input("   Do you want Pepperoni ($1.75) (yes/no)? ")
-                if t2 == 'yes':
-                    price = price + 1.75
-                elif t2 == 'no': 
-                    pass
-                t3 = input("   Do you want Bacon ($2.50) (yes/no)? ")
-                if t3 == 'yes':
-                    price = price + 2.50
-                elif t3 == 'no': 
-                    pass
-                t4 = input("   Do you want Olives ($3.35) (yes/no)? ")
-                if t4 == 'yes':
-                    price = price + 3.35
-                elif t4 == 'no': 
-                    pass
-            elif t == 'no':
-                price = 10.00
-    try:
-        decimal.getcontext().rounding = decimal.ROUND_HALF_UP
-        pizzas.append(price)
-        p = round(decimal.Decimal(str(price)), 2)
-        print("Your pizza is: $" + str(p))
-        print("   Do you want another pizza?")
-        more = input("      Answer here (yes/no): ")
-        if more == 'yes':
+def remove():
+    print("Would you like to remove a pizza?")
+    finished = False
+    while not finished:
+        yorn = input("   Type 'y' for yes or 'n' for no: ")
+        if yorn == 'y':
             print("Your Items:")
             y = 0
             for x in pizzas:
                 y = y + 1
-                print("   " + str(y) + ": $" + str(x))
-        while more == 'no':
-            total = round(decimal.Decimal((sum(pizzas)) * 1.13), 2)
-            print("Your " + str(len(pizzas)) + " items cost: ")
-            y = 0
-            for x in pizzas:
-                y = y + 1
-                print("   " + str(y) + ": $" + str(x))
-            remove = input("   Would you like to remove a pizza (yes/no)? ")
-            if remove == 'yes':
-                print("Your Items:")
-                y = 0
-                for x in pizzas:
-                    y = y + 1
-                    print("   " + str(y) + ": $" + str(x))
-                z = int(input("Which Item would you like to remove? "))
-                z = z - 1
-                pizzas.pop(z)
-                continue
-            elif remove == 'no':
-                print("Your final " + str(len(pizzas)) + " items cost: ")
-                y = 0
-                for x in pizzas:
-                    y = y + 1
-                print("   " + str(y) + ": $" + str(x))
-                print("And your total is: $" + str(total))
-                print("Thank you for buying our pizzas!")
-                more = 'done'
+                print("   Item " + str(y) + "- $" + str(x))
+            z = int(input("Please enter the number of the item you would like to remove: "))
+            z = z - 1
+            pizzas.pop(z)
+            print(more())
+            print(remove())
+            finished = True
+        elif yorn == 'n':
+            pass
+            finished = True
+        else: 
+            print("Please enter 'y' for yes or 'n' for no.")
+
+def more():
+    print("Would you like another pizza?")
+    finished = False
+    while not finished:
+        answer = input("   Type 'y' for yes or 'n' for no: ")
+        if answer == 'y':
+            print("Your pre total is: $" + str(pretotal()))
+            print(more())
+            finished = True
+        elif answer == 'n':
+            pass
+            finished = True
+        else:
+            print("Please enter 'y' for yes or 'n' for no.")
+
+psum = float(sum(pizzas))
+
+tax = round(decimal.Decimal(float(psum) * 0.13), 2)
+final = round(decimal.Decimal(float(psum) * 1.13), 2)
+
+print("Hello!")
+print("Welcome to Pizza Code!")
+print("Your pre total is: $" + str(pretotal()))
+print(more())
+print(remove())
+print("Your final " + str(len(pizzas)) + " item(s) cost: ")
+y = 0
+for x in pizzas:
+    y = y + 1
+    print("   Item " + str(y) + "- $" + str(x))
+print(psum)
+print("Your tax is: $" + str(tax))
+print("And your total is: $" + str(final))
+print("Thank you for buying from Pizza Code!")
