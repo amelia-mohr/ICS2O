@@ -1,8 +1,22 @@
 import decimal
-finished = False
 pizzas = []
+scost = float(0)
+
 def psize():
-    print()
+    print("Do you want a Large ($6.00) or Extra Large ($10.00) pizza?")
+    finished = False
+    while not finished: 
+        size = input("   Type 'l' for Large or 'xl' for Extra Large: ")
+        if size == 'l':
+            scost = float(6.00)
+            finished = True
+        elif size == 'xl':
+            scost = float(10.00)
+            finished = True
+        else:
+            print("Please enter 'l' for Large or 'xl' for Extra Large.")
+    return scost
+        
 
 
 while not finished:
