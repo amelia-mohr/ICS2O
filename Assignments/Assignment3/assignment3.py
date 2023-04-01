@@ -52,60 +52,45 @@ def toppings():
     return tcost
 
 def remove():
-    print("Your Items:")
-    y = 0
-    for x in pizzas:
-        y = y + 1
-        print("   Item " + str(y) + " - $" + str(x))
-    print("Would you like to remove a pizza?")
-    finished = False
-    while not finished:
-        yorn = input("   Type 'y' for yes or 'n' for no: ")
-        if yorn == 'y':
-            complete = False
-            while not complete:
-                print("Your Items:")
-                y = 0
-                for x in pizzas:
-                    y = y + 1
-                    print("   Item " + str(y) + " - $" + str(x))
-                z = int(input("Please enter the number of the item you would like to remove: "))
-                w = z - 1
-                if w < 0 or w >= len(pizzas):
-                    print("Invalid item number!")
-                else: 
-                    print("You've removed: Item " + str(z))
-                    print("Price: $" + str(pizzas[w]))
-                    pizzas.pop(w)
-                    more()
-                    remove()
-                    complete = True
-            finished = True
-        elif yorn == 'n':
-            pass
-            finished = True
+    complete = False
+    while not complete:
+        print("Your Items:")
+        y = 0
+        for x in pizzas:
+            y = y + 1
+            print("   Item " + str(y) + " - $" + str(x))
+        z = int(input("Please enter the number of the item you would like to remove: "))
+        w = z - 1
+        if w < 0 or w >= len(pizzas):
+            print("Invalid item number!")
         else: 
-            print("Please enter 'y' for yes or 'n' for no.")
+            print("   You've removed: Item " + str(z))
+            print("   Price: $" + str(pizzas[w]))
+            pizzas.pop(w)
+            choice()
+            complete = True
 
-def more():
+def choice():
     print("Your Items:")
     y = 0
     for x in pizzas:
         y = y + 1
         print("   Item " + str(y) + " - $" + str(x))
-    print("Would you like to order another pizza?")
+    print("Would you like to order another pizza, remove a pizza, or proceed to checkout?")
     finished = False
     while not finished:
-        answer = input("   Type 'y' for yes or 'n' for no: ")
-        if answer == 'y':
+        answer = input("   Type 'o' for another order, 'r' to remove, or 'p' to proceed: ")
+        if answer == 'o':
             print("Cost: $" + str(pretotal()))
-            more()
+            choice()
             finished = True
-        elif answer == 'n':
-            pass
+        elif answer == 'r':
+            remove()
+            finished = True
+        elif answer == 'p':
             finished = True
         else:
-            print("Please enter 'y' for yes or 'n' for no.")
+            print("Please enter 'o' for another order, 'r' to remove, or 'p' to proceed.")        
 
 def pretotal():
     price = psize() + toppings()
@@ -131,8 +116,7 @@ def total():
 print("Hello!")
 print("Welcome to Pizza Code!")
 print("Cost: $" + str(pretotal()))
-more()
-remove()
+choice()
 print("Final " + str(len(pizzas)) + " Item(s): ")
 y = 0
 for x in pizzas:
