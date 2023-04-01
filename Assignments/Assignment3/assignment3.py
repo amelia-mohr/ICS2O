@@ -1,10 +1,10 @@
 import decimal
 decimal.getcontext().rounding = decimal.ROUND_HALF_UP
-p = ()
-pizzas = list(p)
+pizzas = []
 scost = float(0)
 tcost = float(0)
 pretotal = float(0)
+tax = float(0)
 total = float(0)
 
 def psize():
@@ -100,24 +100,26 @@ def more():
         else:
             print("Please enter 'y' for yes or 'n' for no.")
 
-p = tuple(pizzas)
+def tax():
+    p = sum(pizzas)
+    tax = round(decimal.Decimal(float(p) * 0.13), 2)
+    return tax
 
-psum = float(sum(p))
+def total():
+    p = sum(pizzas)
+    total = round(decimal.Decimal(float(p) * 1.13), 2)
+    return total
 
-tax = round(decimal.Decimal(float(psum) * 0.13), 2)
-final = round(decimal.Decimal(float(psum) * 1.13), 2)
-
+y = 0
 print("Hello!")
 print("Welcome to Pizza Code!")
 print("Your pre total is: $" + str(pretotal()))
 print(more())
 print(remove())
 print("Your final " + str(len(pizzas)) + " item(s) cost: ")
-y = 0
 for x in pizzas:
     y = y + 1
     print("   Item " + str(y) + "- $" + str(x))
-print(psum)
-print("Your tax is: $" + str(tax))
-print("And your total is: $" + str(final))
+print("Your tax is: $" + str(tax()))
+print("And your total is: $" + str(total()))
 print("Thank you for buying from Pizza Code!")
