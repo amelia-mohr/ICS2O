@@ -117,6 +117,7 @@ print("Hello!")
 print("Welcome to Pizza Code!")
 print("Cost: $" + str(pretotal()))
 choice()
+print("CHECKOUT")
 print("Final " + str(len(pizzas)) + " Item(s): ")
 y = 0
 for x in pizzas:

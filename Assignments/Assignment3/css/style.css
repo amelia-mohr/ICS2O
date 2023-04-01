@@ -1,0 +1,29 @@
+.title {
+  margin-top: 25px;
+  background-color: #e91c63;
+  padding: 7px;
+  font-size: 45px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+  color: #fff;
+  text-align: center;
+}
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 275px;
+  background-color: #009688;
+}
+  
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+}
+
+.float-container {
+  padding: 20px;
+}
+
+.float-child {
+  float: left;
+  padding: 20px;
+}
