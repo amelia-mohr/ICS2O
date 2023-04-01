@@ -16,7 +16,7 @@ def psize():
         else:
             print("Please enter 'l' for Large or 'xl' for Extra Large.")
     return scost
-   
+
 def toppings():
     ntopping = int(0)
     for a in range(1, 5):
