@@ -128,13 +128,13 @@ def total():
     total = round(decimal.Decimal(float(p) * 1.13), 2)
     return total
 
-y = 0
 print("Hello!")
 print("Welcome to Pizza Code!")
 print("Cost: $" + str(pretotal()))
 more()
 remove()
 print("Final " + str(len(pizzas)) + " Item(s): ")
+y = 0
 for x in pizzas:
     y = y + 1
     print("   Item " + str(y) + " - $" + str(x))
