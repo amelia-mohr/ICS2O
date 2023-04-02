@@ -27,6 +27,13 @@
   float: left;
 }
 
+.h6 {
+  text-align: left;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+}
+
 .choices {
   color: rgba(0, 0, 0, 0.467);
   font-family: "Times New Roman", Times, serif;
