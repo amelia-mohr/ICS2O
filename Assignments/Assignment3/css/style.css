@@ -28,6 +28,9 @@
 }
 
 .float-child {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .h6 {
