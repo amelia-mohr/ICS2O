@@ -1,7 +1,7 @@
 .title {
   margin-top: 25px;
   background-color: #e91c63;
-  padding: 7px;
+  padding: 32px;
   font-size: 45px;
   font-family: "Times New Roman", Times, serif;
   text-decoration: underline;
@@ -45,7 +45,7 @@
 }
 
 .choices {
-  color: rgba(0, 0, 0, 0.467);
+  color: #fff;
   font-family: "Times New Roman", Times, serif;
 }
 
