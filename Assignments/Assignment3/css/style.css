@@ -27,10 +27,14 @@
   
 }
 
-.float-child {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.float-child1 {
+  float: left;
+  padding: 20px;
+}
+
+.float-child1 {
+  float: right;
+  padding: 20px;
 }
 
 .h6 {
