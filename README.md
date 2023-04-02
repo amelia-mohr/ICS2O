@@ -5,4 +5,4 @@
 <br>
 [Assignment#2](./Assignments/Assignment2/assignment2.html)
 <br>
-[index](./Assignments/Assignment2/index.html)
+[Assignment#3](./Assignments/Assignment3/assignment3.html)
