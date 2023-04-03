@@ -33,7 +33,8 @@
 
 .float-child3 {
   margin: 20px;
-  width: 100px;
+  max-width: 100%;  
+  height: auto;
 }
 
 .h6 {
