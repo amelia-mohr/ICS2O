@@ -10,8 +10,8 @@
 }
 
 .demo-card-square.mdl-card {
-  width: 320px;
-  height: 275px;
+  width: 300px;
+  height: auto;
   background-color: #009688;
 }
   
@@ -40,6 +40,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 300px;
+  height: 200px;
 }
 
 .h6 {
