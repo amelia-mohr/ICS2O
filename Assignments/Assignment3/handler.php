@@ -22,8 +22,6 @@
     if (isset($_POST["size"])) {
       $size = $_POST["size"];
     }
-    $numtoppings = array()
-    
     $t1 = "";
     if (isset($_POST["t1"])) {
       $t1 = $_POST["t1"];
@@ -41,10 +39,6 @@
     if (isset($_POST["t4"])) {
       $t4 = $_POST["t4"];
     }
-
-
-
-
     echo $size;
     echo $t1;
     echo $t2;
