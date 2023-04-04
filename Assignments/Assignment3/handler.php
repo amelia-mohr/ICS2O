@@ -39,6 +39,8 @@
     if (isset($_POST["t4"])) {
       $t4 = $_POST["t4"];
     }
+    $toppings = 
+    
     echo $size;
     echo $t1;
     echo $t2;
