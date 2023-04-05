@@ -2,13 +2,17 @@ import decimal
 decimal.getcontext().rounding = decimal.ROUND_HALF_UP
 
 def sidea():
-    finished = False
-    while not finished:
-        a = float(input("Please enter a length for base a of your trapezoid: "))
-        if a <= 0:
-            print("Please enter a POSITIVE NUMBER!")
-        else: 
-            finished = True
+    try:
+        finished = False
+        while not finished:
+            a = float(input("Please enter a length for base a of your trapezoid: "))
+            if a <= 0:
+                raise ValueError
+            else: 
+                finished = True
+    except ValueError:
+        print("Please enter a POSITIVE NUMBER!")
+        sidea()
     return a
 
 def sideb():
