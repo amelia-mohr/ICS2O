@@ -48,6 +48,16 @@
   size: auto;
 }
 
+.message {
+  color: rgb(255,64,129);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  display: inline-block;
+  padding: 0 16px;
+}
+
 .bottom-title-text {
   color: #fff;
 }
