@@ -135,7 +135,7 @@
           Thank you for ordering from
           <br>
           Pizza Code!
-        <p>
+        </p>
       </center>
     </center>
     <br>
