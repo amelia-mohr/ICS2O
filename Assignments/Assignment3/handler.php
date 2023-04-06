@@ -69,8 +69,9 @@
     settype($toppings, 'float');
     
     $subtotal = $psize + $toppings;
-    $tax = $subtotal * 0.13;
-    $total = $subtotal * 1.13;
+    settype($subtotal, 'float');
+    $tax = round($subtotal * 0.13, 2);
+    $total = round($subtotal * 1.13, 2);
 
     settype($psize,'string');
     settype($toppings,'string');
