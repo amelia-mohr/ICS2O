@@ -52,36 +52,43 @@ def toppings():
     return tcost
 
 def remove():
-    complete = False
-    while not complete:
+    if len(pizzas) == 0:
+        print("You have NO ITEMS to remove.")
+        choice()
+    else:
+        complete = False
+        while not complete:
+            print("Your Items:")
+            y = 0
+            for x in pizzas:
+                y = y + 1
+                print("   Item " + str(y) + " - $" + str(x))
+            z = int(input("Please enter the item number you would like to remove: "))
+            w = z - 1
+            if w < 0 or w >= len(pizzas):
+                print("Invalid item number!")
+            else: 
+                print("   You've removed: Item " + str(z))
+                print("   Price: $" + str(pizzas[w]))
+                pizzas.pop(w)
+                choice()
+                complete = True
+
+def choice():
+    if len(pizzas) == 0:
+        print("You have no items.")
+    else: 
         print("Your Items:")
         y = 0
         for x in pizzas:
             y = y + 1
             print("   Item " + str(y) + " - $" + str(x))
-        z = int(input("Please enter the number of the item you would like to remove: "))
-        w = z - 1
-        if w < 0 or w >= len(pizzas):
-            print("Invalid item number!")
-        else: 
-            print("   You've removed: Item " + str(z))
-            print("   Price: $" + str(pizzas[w]))
-            pizzas.pop(w)
-            choice()
-            complete = True
-
-def choice():
-    print("Your Items:")
-    y = 0
-    for x in pizzas:
-        y = y + 1
-        print("   Item " + str(y) + " - $" + str(x))
     print("Would you like to order another pizza, remove a pizza, or proceed to checkout?")
     finished = False
     while not finished:
         answer = input("   Type 'o' for another order, 'r' to remove, or 'p' to proceed: ")
         if answer == 'o':
-            print("Cost: $" + str(pretotal()))
+            print("Cost: $" + str(cost()))
             choice()
             finished = True
         elif answer == 'r':
@@ -92,11 +99,11 @@ def choice():
         else:
             print("Please enter 'o' for another order, 'r' to remove, or 'p' to proceed.")        
 
-def pretotal():
+def cost():
     price = psize() + toppings()
-    pretotal = round(decimal.Decimal(str(price)), 2)
-    pizzas.append(pretotal)
-    return pretotal
+    cost = round(decimal.Decimal(str(price)), 2)
+    pizzas.append(cost)
+    return cost
 
 def subtotal():
     price = sum(pizzas)
@@ -115,7 +122,7 @@ def total():
 
 print("Hello!")
 print("Welcome to Pizza Code!")
-print("Cost: $" + str(pretotal()))
+print("Cost: $" + str(cost()))
 choice()
 print("CHECKOUT")
 print("Final " + str(len(pizzas)) + " Item(s): ")
