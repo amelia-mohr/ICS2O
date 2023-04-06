@@ -130,7 +130,7 @@
         </tr>
       </table>
       <center>
-        <p class="message mdl-shadow--2dp">
+        <p class="message">
           Thank you for ordering from
           <br>
           Pizza Code!
