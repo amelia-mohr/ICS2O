@@ -100,14 +100,14 @@ def choice():
             print("Please enter 'o' for another order, 'r' to remove, or 'p' to proceed.")        
 
 def cost():
-    price = psize() + toppings()
-    cost = round(decimal.Decimal(str(price)), 2)
+    p = psize() + toppings()
+    cost = round(decimal.Decimal(str(p)), 2)
     pizzas.append(cost)
     return cost
 
 def subtotal():
-    price = sum(pizzas)
-    subtotal = round(decimal.Decimal(str(price)), 2)
+    p = sum(pizzas)
+    subtotal = round(decimal.Decimal(str(p)), 2)
     return subtotal
 
 def tax():
