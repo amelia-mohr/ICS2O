@@ -129,7 +129,6 @@
           </td>
         </tr>
       </table>
-      <br>
       <center>
         <p class="message">
           Thank you for ordering from
