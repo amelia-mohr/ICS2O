@@ -111,13 +111,17 @@ def subtotal():
     return subtotal
 
 def tax():
-    p = sum(pizzas)
-    tax = round(decimal.Decimal(float(p) * 0.13), 2)
+    p = decimal.Decimal(str(sum(pizzas)))
+    t = decimal.Decimal("0.13")
+    calc = p * t
+    tax = round(calc, 2)
     return tax
 
 def total():
-    p = sum(pizzas)
-    total = round(decimal.Decimal(float(p) * 1.13), 2)
+    p = decimal.Decimal(str(sum(pizzas)))
+    t = decimal.Decimal("1.13")
+    calc = p * t
+    total = round(calc, 2)
     return total
 
 print("Hello!")
