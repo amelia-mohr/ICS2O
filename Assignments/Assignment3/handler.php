@@ -18,22 +18,19 @@
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <?php
-    $size = "";
-    if (isset($_POST["size"])) {
-      $answer = $_POST["size"];
-      if ($answer == "Large") {
-        $size = "Large";
-      } elseif ($answer == "Extra Large") {
-        $size = "Extra Large";
-      } else {
-        $size = "";
-      }
+    if (isset($_POST["lsize"])) {
+      $size = "Large";
+    } elseif (isset($_POST["xlsize"])) {
+      $size = "Extra Large";
+    } else {
+      $size = "";
     }
-    $psize = "0.00";
     if ($size = "Large") {
       $psize = "6.00";
     } elseif ($size = "Extra Large") {
       $psize = "10.00";
+    } else {
+      $psize = "0.00";
     }
     settype($psize, 'float');
 
@@ -41,23 +38,21 @@
     $t1 = "";
     if (isset($_POST["t1"])) {
       $t1 = "Onions";
-      array_push($list, $t1);
     }
     $t2 = "";
     if (isset($_POST["t2"])) {
       $t2 = "Pepperoni";
-      array_push($list, $t2);
     }
     $t3 = "";
     if (isset($_POST["t3"])) {
       $t3 = "Bacon";
-      array_push($list, $t3);
     }
     $t4 = "";
     if (isset($_POST["t4"])) {
       $t4 = "Olives";
       array_push($list, $t4);
     }
+    array_push($list, $t1, $t2, $t3, $t4);
     $number = count($list);
     list($a, $b, $c, $d) = $list;
 
