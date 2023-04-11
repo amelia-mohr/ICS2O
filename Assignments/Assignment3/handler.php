@@ -34,7 +34,6 @@
     }
     settype($psize, 'float');
 
-    $list = array();
     $t1 = "";
     if (isset($_POST["t1"])) {
       $t1 = "Onions";
@@ -52,7 +51,7 @@
       $t4 = "Olives";
       array_push($list, $t4);
     }
-    array_push($list, $t1, $t2, $t3, $t4);
+    $list = array($t1, $t2, $t3, $t4);
     $number = count($list);
     list($a, $b, $c, $d) = $list;
 
