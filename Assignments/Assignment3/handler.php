@@ -80,8 +80,6 @@
     settype($subtotal,'string');
     settype($tax,'string');
     settype($total,'string');
-
-    echo ("$psize<br>$toppings<br>$number<br>$subtotal<br>$tax<br>$total");
     ?>
     
     <div>
@@ -115,15 +113,15 @@
               </div>
               <div class="mdl-card__supporting-text">
                 <p class="choices">
-                  SIZE:
+                  SIZE: <?=$psize?>
                   <br>
-                  TOPPINGS: 
+                  TOPPINGS: <?=$toppings?>
                   <br>
-                  SUBTOTAL:
+                  SUBTOTAL: <?=$subtotal?>
                   <br>
-                  TAX:
+                  TAX: <?=$tax?>
                   <br>
-                  TOTAL:
+                  TOTAL: <?=$total?>
                 <p>
               </div>
             </div>
