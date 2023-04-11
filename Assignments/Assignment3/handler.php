@@ -48,7 +48,6 @@
     }
     $list = array($t1, $t2, $t3, $t4);
     $number = count($list);
-    list($a, $b, $c, $d) = $list;
 
     $toppings = "";
     if ($number = 0) {
@@ -93,10 +92,10 @@
                   SIZE: <?=$size?>
                   <br>
                   TOPPINGS: <br>
-                  <?=$a?> <br>
-                  <?=$b?> <br>
-                  <?=$c?> <br>
-                  <?=$d?>
+                  <?=$t1?> <br>
+                  <?=$t2?> <br>
+                  <?=$t3?> <br>
+                  <?=$t4?>
                 <p>
               </div>
             </div>
