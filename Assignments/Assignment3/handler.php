@@ -34,20 +34,25 @@
     }
     settype($psize, 'float');
 
+    $list = array();
     if (isset($_POST["t1"])) {
       $t1 = "Onions";
+      array_push($list, $t1);
     }
     if (isset($_POST["t2"])) {
       $t2 = "Pepperoni";
+      array_push($list, $t2);
     }
     if (isset($_POST["t3"])) {
       $t3 = "Bacon";
+      array_push($list, $t3);
     }
     if (isset($_POST["t4"])) {
       $t4 = "Olives";
+      array_push($list, $t4);
     }
-    $list = array($t1, $t2, $t3, $t4);
     $number = count($list);
+    list($a, $b, $c, $d) = $list;
 
     $toppings = "";
     if ($number = 0) {
@@ -92,10 +97,10 @@
                   SIZE: <?=$size?>
                   <br>
                   TOPPINGS: <br>
-                  <?=$t1?> <br>
-                  <?=$t2?> <br>
-                  <?=$t3?> <br>
-                  <?=$t4?>
+                  <?=$a?> <br>
+                  <?=$b?> <br>
+                  <?=$c?> <br>
+                  <?=$d?>
                 <p>
               </div>
             </div>
