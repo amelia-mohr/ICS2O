@@ -20,7 +20,14 @@
     <?php
     $size = "";
     if (isset($_POST["size"])) {
-      $size = $_POST["size"];
+      $answer = $_POST["size"];
+      if ($answer == "Large") {
+        $size = "Large";
+      } elseif ($answer == "Extra Large") {
+        $size = "Extra Large";
+      } else {
+        $size = "";
+      }
     }
     $psize = "0.00";
     if ($size = "Large") {
@@ -33,28 +40,28 @@
     $list = array();
     $t1 = "";
     if (isset($_POST["t1"])) {
-      $t1 = $_POST["t1"];
+      $t1 = "Onions";
       array_push($list, $t1);
     }
     $t2 = "";
     if (isset($_POST["t2"])) {
-      $t2 = $_POST["t2"];
+      $t2 = "Pepperoni";
       array_push($list, $t2);
     }
     $t3 = "";
     if (isset($_POST["t3"])) {
-      $t3 = $_POST["t3"];
+      $t3 = "Bacon";
       array_push($list, $t3);
     }
     $t4 = "";
     if (isset($_POST["t4"])) {
-      $t4 = $_POST["t4"];
+      $t4 = "Olives";
       array_push($list, $t4);
     }
+    $number = count($list);
     list($a, $b, $c, $d) = $list;
 
     $toppings = "";
-    $number = count($list);
     if ($number = 0) {
       $toppings = "0.00";
     } elseif ($number = 1) {
@@ -98,10 +105,10 @@
                 <p class="choices">
                   SIZE: <?=$size?>
                   <br>
-                  TOPPINGS: 
-                  <?=$a?>
-                  <?=$b?>
-                  <?=$c?>
+                  TOPPINGS: <br>
+                  <?=$a?> <br>
+                  <?=$b?> <br>
+                  <?=$c?> <br>
                   <?=$d?>
                 <p>
               </div>
