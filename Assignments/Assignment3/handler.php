@@ -34,22 +34,17 @@
     }
     settype($psize, 'float');
 
-    $t1 = "";
     if (isset($_POST["t1"])) {
       $t1 = "Onions";
     }
-    $t2 = "";
     if (isset($_POST["t2"])) {
       $t2 = "Pepperoni";
     }
-    $t3 = "";
     if (isset($_POST["t3"])) {
       $t3 = "Bacon";
     }
-    $t4 = "";
     if (isset($_POST["t4"])) {
       $t4 = "Olives";
-      array_push($list, $t4);
     }
     $list = array($t1, $t2, $t3, $t4);
     $number = count($list);
