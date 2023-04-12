@@ -24,7 +24,6 @@
       "Extra Large" => 10.00
     );
     $psize = $sprices[$size];
-
     $list = array();
     if (isset($_POST["t1"])) {
       $t1 = "Onions";
@@ -44,25 +43,18 @@
     }
     $number = count($list);
     list($a, $b, $c, $d) = $list;
-
-    $toppings = "";
-    if ($number = 0) {
-      $toppings = 0.00;
-    } elseif ($number = 1) {
-      $toppings = 1.00;
-    } elseif ($number = 2) {
-      $toppings = 1.75;
-    } elseif ($number = 3) {
-      $toppings = 2.50;
-    } elseif ($number = 4) {
-      $toppings = 3.35;
-    }
-    
+    $ptoppings = array(
+      0 => 0.00,
+      1 => 1.00,
+      2 => 1.75,
+      3 => 2.50,
+      4 => 3.35
+    );
+    $toppings = $ptoppings[$number];
     $subtotal = $psize + $toppings;
     settype($subtotal, 'float');
     $tax = round($subtotal * 0.13, 2);
     $total = round($subtotal * 1.13, 2);
-
     settype($psize,'string');
     settype($toppings,'string');
     settype($number,'string');
