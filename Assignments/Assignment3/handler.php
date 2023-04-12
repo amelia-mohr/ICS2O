@@ -23,7 +23,7 @@
       "Large" => 6.00,
       "Extra Large" => 10.00
     );
-    $psize = $sprices[$size];
+    $psize = round($sprices[$size], 2);
     $list = array();
     if (isset($_POST["t1"])) {
       $t1 = "Onions";
@@ -50,8 +50,8 @@
       3 => 2.50,
       4 => 3.35
     );
-    $toppings = $ptoppings[$number];
-    $subtotal = $psize + $toppings;
+    $toppings = round($ptoppings[$number], 2);
+    $subtotal = round($psize + $toppings, 2);
     $tax = round($subtotal * 0.13, 2);
     $total = round($subtotal * 1.13, 2);
     ?>
