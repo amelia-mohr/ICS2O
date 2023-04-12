@@ -1,20 +1,25 @@
 import decimal
+decimal.getcontext().rounding = decimal.ROUND_HALF_UP
 finished = False 
 while not finished:
     try:
-        d = float(input("Please enter a diameter: "))
-        if d <= 0:
+        a = float(input("Please enter a length for side a: "))
+        if a <= 0:
+            raise ValueError
+        b = float(input("Please enter a length for side b: "))
+        if b <= 0:
+            raise ValueError
+        h = float(input("Please enter a height: "))
+        if h <= 0:
             raise ValueError
         u = str(input("Please enter a unit (ex. cm, ft, etc.): "))
-        decimal.getcontext().rounding = decimal.ROUND_HALF_UP
-        r = float(round(decimal.Decimal(str(d / 2)), 2))
-        a = round(decimal.Decimal(pi*(r**2)), 2)
-        c = round(decimal.Decimal(2*pi*r), 2)
+        a = decimal.Decimal(a)
+        b = decimal.Decimal(b)
+        h = decimal.Decimal(h)
+        calc = ((a + b)/2)*h
+        area = round(calc, 2)
         print("All results (except for the diameter) are rounded to 2 decimal places.")
-        print("The diameter of your circle is: " + str(d) + " " + u)
-        print("The radius of your circle is: " + str(r) + " " + u)
-        print("The area of your circle is: " + str(a) + " " + u + "²")
-        print("And the circumference of your circle is: " + str(c) + " " + u)
+        print("The area of your circle is: " + str(area) + " " + u + "²")
         finished = True
     except ValueError:
         print("Please enter a POSITIVE NUMBER!")
