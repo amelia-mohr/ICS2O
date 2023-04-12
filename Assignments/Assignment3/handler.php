@@ -58,7 +58,7 @@
       $toppings = 3.35;
     }
     
-    $subtotal = round($psize + $toppings, 2);
+    $subtotal = $psize + $toppings;
     settype($subtotal, 'float');
     $tax = round($subtotal * 0.13, 2);
     $total = round($subtotal * 1.13, 2);
