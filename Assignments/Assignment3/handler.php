@@ -104,15 +104,15 @@
               </div>
               <div class="mdl-card__supporting-text">
                 <p class="choices">
-                  SIZE: <?=$psize?>
+                  SIZE: $<?=$psize?>
                   <br>
-                  TOPPINGS: <?=$toppings?>
+                  TOPPINGS: $<?=$toppings?>
                   <br>
-                  SUBTOTAL: <?=$subtotal?>
+                  SUBTOTAL: $<?=$subtotal?>
                   <br>
-                  TAX: <?=$tax?>
+                  TAX: $<?=$tax?>
                   <br>
-                  TOTAL: <?=$total?>
+                  TOTAL: $<?=$total?>
                 <p>
               </div>
             </div>
