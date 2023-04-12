@@ -6,5 +6,3 @@
 [Assignment#2](./Assignments/Assignment2/assignment2.html)
 <br>
 [Assignment#3](./Assignments/Assignment3/assignment3.html)
-<br>
-[TESTING](./Assignments/Assignment3/index.html)
