@@ -20,8 +20,8 @@
     <?php
     $size = $_POST["size"];
     $sprices = array(
-      "L" => 6.00,
-      "XL" => 10.00
+      "Large" => 6.00,
+      "Extra Large" => 10.00
     );
     $psize = $sprices[$size];
     settype($psize, 'float');
