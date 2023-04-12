@@ -18,20 +18,12 @@
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <?php
-    if (isset($_POST["lsize"])) {
-      $size = "Large";
-    } elseif (isset($_POST["xlsize"])) {
-      $size = "Extra Large";
-    } else {
-      $size = "";
-    }
-    if ($size = "Large") {
-      $psize = "6.00";
-    } elseif ($size = "Extra Large") {
-      $psize = "10.00";
-    } else {
-      $psize = "0.00";
-    }
+    $size = $_POST["size"];
+    $sprices = array(
+      "L" => 6.00,
+      "XL" => 10.00
+    );
+    $psize = $sprices[$size];
     settype($psize, 'float');
 
     $list = array();
