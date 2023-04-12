@@ -23,7 +23,7 @@
       "Large" => 6.00,
       "Extra Large" => 10.00
     );
-    $psize = round($sprices[$size], 2);
+    $psize = $sprices[$size];
     $list = array();
     if (isset($_POST["t1"])) {
       $t1 = "Onions";
@@ -50,8 +50,8 @@
       3 => 2.50,
       4 => 3.35
     );
-    $toppings = round($ptoppings[$number], 2);
-    $subtotal = round($psize + $toppings, 2);
+    $toppings = $ptoppings[$number];
+    $subtotal = $psize + $toppings;
     $tax = round($subtotal * 0.13, 2);
     $total = round($subtotal * 1.13, 2);
     ?>
@@ -86,15 +86,15 @@
               </div>
               <div class="mdl-card__supporting-text">
                 <p class="choices">
-                  SIZE: $<?=$psize?>
+                  SIZE: $<?=number_format($psize, 2)?>
                   <br>
-                  TOPPINGS: $<?=$toppings?>
+                  TOPPINGS: $<?=number_format($toppings, 2)?>
                   <br>
-                  SUBTOTAL: $<?=$subtotal?>
+                  SUBTOTAL: $<?=number_format($subtotal, 2)?>
                   <br>
-                  TAX: $<?=$tax?>
+                  TAX: $<?=number_format($tax, 2)?>
                   <br>
-                  TOTAL: $<?=$total?>
+                  TOTAL: $<?=number_format($total, 2)?>
                 <p>
               </div>
             </div>
