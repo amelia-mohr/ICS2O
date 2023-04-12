@@ -52,17 +52,9 @@
     );
     $toppings = $ptoppings[$number];
     $subtotal = $psize + $toppings;
-    settype($subtotal, 'float');
     $tax = round($subtotal * 0.13, 2);
     $total = round($subtotal * 1.13, 2);
-    settype($psize,'string');
-    settype($toppings,'string');
-    settype($number,'string');
-    settype($subtotal,'string');
-    settype($tax,'string');
-    settype($total,'string');
     ?>
-    
     <div>
       <h1 class="title">CHECKOUT</h1>
     </div>
