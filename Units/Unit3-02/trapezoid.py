@@ -18,7 +18,7 @@ while not finished:
         h = decimal.Decimal(h)
         calc = ((a + b)/2)*h
         area = round(calc, 2)
-        print("All results (except for the diameter) are rounded to 2 decimal places.")
+        print("All results are rounded to 2 decimal places.")
         print("The area of your circle is: " + str(area) + " " + u + "²")
         finished = True
     except ValueError:
