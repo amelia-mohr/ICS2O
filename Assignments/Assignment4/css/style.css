@@ -60,6 +60,10 @@
   font-family: 'Times New Roman', Times, serif;
   color: black;
   font-size: 14px;
-  margin-left: 33px;
-  padding: 10px;
+  list-style-type: circle;
+  background-color: aliceblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 420px;
+  margin-left: 30px;
 }
