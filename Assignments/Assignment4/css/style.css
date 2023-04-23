@@ -40,6 +40,7 @@
 
 .cardtext {
   font-family: "Times New Roman", Times, serif;
+  color: black;
 }
 
 .tabs {
@@ -48,7 +49,3 @@
   font-size: 14px;
 }
 
-.headtitle {
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-}
