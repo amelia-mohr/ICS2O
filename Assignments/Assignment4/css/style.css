@@ -55,3 +55,11 @@
   margin-left: 25px;
   font-size: 28px;
 }
+
+.list {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 14px;
+  margin-left: 33px;
+  padding: 10px;
+}
