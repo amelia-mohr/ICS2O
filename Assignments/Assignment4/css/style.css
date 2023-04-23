@@ -16,11 +16,6 @@
   border-radius: 8px;
 }
 
-.demo-card-square > .mdl-card__title {
-  background:
-    url(https://www.springboard.com/blog/wp-content/uploads/2020/07/5-qualities-of-high-performing-software-engineers.png) center / cover;
-}
-
 .cardtitle {
   color: #00BCD4;
   font-family: "Times New Roman", Times, serif;
@@ -28,6 +23,10 @@
   background: #fff;
 }
 
+.demo-card-square > .mdl-card__title {
+  background:
+    url(https://www.springboard.com/blog/wp-content/uploads/2020/07/5-qualities-of-high-performing-software-engineers.png) center / cover;
+}
 
 .title {
   margin-top: 25px;
