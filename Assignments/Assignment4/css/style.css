@@ -17,11 +17,16 @@
 }
 
 .demo-card-square > .mdl-card__title {
-  color: #00BCD4;
-  font-family: "Times New Roman", Times, serif;
   background:
     url(https://www.springboard.com/blog/wp-content/uploads/2020/07/5-qualities-of-high-performing-software-engineers.png) center / cover;
 }
+
+.demo-card-square > .mdl-card__title > mdl-card__title-text {
+  color: #00BCD4;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
 
 .title {
   margin-top: 25px;
@@ -36,4 +41,15 @@
 .cardtext {
   font-family: "Times New Roman", Times, serif;
 
+}
+
+.tabs {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 14px;
+}
+
+.headtitle {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
 }
