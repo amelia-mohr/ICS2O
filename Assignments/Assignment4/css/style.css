@@ -83,3 +83,23 @@
   padding-right: 20px;
 }
 
+.list2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 18px;
+  list-style-type: circle;
+  background-color: aliceblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nestedlist {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 18px;
+  list-style-type: none;
+}
