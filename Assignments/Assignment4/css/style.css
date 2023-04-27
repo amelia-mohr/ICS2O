@@ -128,3 +128,18 @@
   padding-right: 20px;
 }
 
+.end {
+  text-align: center;
+  color: #00BCD4;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+.next {
+  text-align: center;
+  color: #00BCD4;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  font-size: 25px;
+}
