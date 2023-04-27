@@ -115,3 +115,16 @@
   font-size: 22px;
 }
 
+.vocation {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 18px;
+  background-color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
