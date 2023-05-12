@@ -8,14 +8,19 @@ def calculations(number):
         z = z * -1
     return pi * 4
 
-
-iterations = input()
-try:
-    int(iterations)
-except ValueError:
-    print("You entered text. Please enter a positive integer.")
-else:
-    if int(iterations) < 0:
-        print("You entered a negative number. Please enter a positive integer.")
-    else:
-        print(calculations(iterations))
+finished = False
+while not finished: 
+    print("To exit type 'q'")
+    it = input("Please enter a number of iterations for pi: ")
+    try:
+        int(it)
+    except ValueError:
+        if it == 'q':
+            finished = True
+        else: 
+            print("Please enter a NUMBER!")
+    else: 
+        if int(it) < 0:
+            print("Please enter a POSITIVE number!")
+        else: 
+            print("The value of pi with " + str(it) + " iterations is: " + str(calculations(it)))
