@@ -8,3 +8,5 @@
 [Assignment#3](./Assignments/Assignment3/assignment3.html)
 <br>
 [Assignment#4](./Assignments/Assignment4/index.html)
+<br>
+[Assignment#6](./Assignments/Assignment6/a6.html)
