@@ -20,9 +20,9 @@
     <?php
     $i = "";
     if (isset($_POST["i"])) {
-        $i = $_POST["i"];
+      $i = $_POST["i"];
     }
-    settype($i, 'float');
+    settype($i, 'integer');
     $x = 1;
     $z = 1;
     $pi = 0;
@@ -37,11 +37,11 @@
     <div class="header">
       <h1 class="title">Assignment #6!</h1>
     </div>
-    <h3 class="h3">The area and circumference of a circle!</h3>
+    <h3 class="h3">The value of PI!</h3>
     <center>
       <div class="demo-card-square mdl-card mdl-shadow--2dp" style="border-radius: 8px;">
         <div class="mdl-card__title mdl-card--border">
-          <h6 class="mdl-card__title-text h6">Here is the value of PI with (blank) iterations:</h6>
+          <h6 class="mdl-card__title-text h6">Here is the value of PI with <?=$i?> iteration(s):</h6>
         </div>
         <div class="mdl-card__supporting-text">
           <p class="results">
