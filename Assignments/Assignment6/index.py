@@ -20,7 +20,7 @@ while not finished:
         else: 
             print("Please enter a NUMBER!")
     else: 
-        if int(it) < 0:
+        if int(it) <= 0:
             print("Please enter a POSITIVE number!")
         else: 
             print("The value of pi with " + str(it) + " iterations is: " + str(calc(it)))
