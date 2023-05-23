@@ -1,9 +1,9 @@
 .demo-layout-transparent {
-    background: url('../assets/demos/transparent.jpg') center / cover;
-  }
-  .demo-layout-transparent .mdl-layout__header,
-  .demo-layout-transparent .mdl-layout__drawer-button {
-    /* This background is dark, so we set text to white. Use 87% black instead if
-      your background is light. */
-    color: black;
-  }
+  background: url('https://dcdeb370061a2f96ba54-cb731e64799a4e011b6a04b00ef66067.ssl.cf5.rackcdn.com/Galerie/G23286.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+    your background is light. */
+  color: rgba(0, 0, 0, 0.87);
+}
