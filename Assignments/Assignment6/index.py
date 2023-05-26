@@ -18,7 +18,7 @@ while not finished:
         if it == 'q':
             finished = True
         else: 
-            print("Please enter a NUMBER!")
+            print("Please enter an INTEGER!")
     else: 
         if int(it) <= 0:
             print("Please enter a POSITIVE number!")
