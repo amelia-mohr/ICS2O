@@ -72,3 +72,8 @@ nav img{
   position: relative;
   cursor: pointer;
 }
+.shop-btn:hover{
+  border: 1px solid #c5f13397;
+  background: #c5f13397;
+  transition: 1s;
+}
