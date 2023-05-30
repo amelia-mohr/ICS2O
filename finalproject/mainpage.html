@@ -19,7 +19,7 @@
       <nav>
         <!--Add logo?-->
         <a href="mainpage.html"><img src=""></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">HOME</a></li>
@@ -38,5 +38,15 @@
       </div>
     </section>
 
+    <!--JavaScript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
