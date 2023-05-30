@@ -56,3 +56,17 @@ nav img{
   transform: translate(-50%,-50%);
   text-align: center;
 }
+.text-box h1{
+  font-size: 62px;
+}
+.shop-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
