@@ -130,3 +130,11 @@ nav img{
   left: 50%;
   transform: translateX(-50%);
 }
+.people{
+  margin: 100px auto;
+  width: 80%;
+  background: #c5f133e8;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
