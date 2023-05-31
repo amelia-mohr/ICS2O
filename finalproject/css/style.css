@@ -131,6 +131,9 @@ nav img{
   transform: translateX(-50%);
 }
 .people{
+  margin: 70px 0;
+}
+.emma{
   margin: 100px auto;
   width: 80%;
   background: #c5f133e8;
