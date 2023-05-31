@@ -95,15 +95,9 @@ nav img{
   width: 100%;
   border-radius: 6px;
 }
-.col-3 a h4{
+.info{
   text-decoration: none;
-  color: #000;
-  position: relative;
-}
-.col-3 a p{
-  text-decoration: none;
-  color: #000;
-  position: relative;
+  color: #fff;
 }
 .small-container{
   max-width: 1080px;
