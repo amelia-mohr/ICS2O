@@ -89,9 +89,10 @@ nav img{
 .col-3{
   flex-basis: 30%;
   min-width: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
   border-radius: 10px;
   box-sizing: border-box;
+  padding: 1%;
   transition: 0.5s;
 }
 .col-3:hover{
