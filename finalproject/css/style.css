@@ -94,6 +94,14 @@ nav img{
 .col-3 a img{
   width: 100%;
 }
+.col-3 a h4{
+  text-decoration: none;
+  color: #000;
+}
+.col-3 a p{
+  text-decoration: none;
+  color: #000;
+}
 .small-container{
   max-width: 1080px;
   margin: auto;
