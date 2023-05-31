@@ -93,6 +93,7 @@ nav img{
 }
 .col-3 a img{
   width: 100%;
+  border-radius: 6px;
 }
 .col-3 a h4{
   text-decoration: none;
