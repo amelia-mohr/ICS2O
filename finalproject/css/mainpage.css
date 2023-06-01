@@ -117,10 +117,10 @@ nav img{
   border-radius: 10px;
   box-sizing: border-box;
   padding: 1%;
-  transition: 0.5s;
+  transition: transform 0.5s;
 }
 .col-3:hover{
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 .col-3 a{
   text-decoration: none;
