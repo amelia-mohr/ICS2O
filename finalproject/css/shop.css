@@ -99,8 +99,8 @@ nav img{
   width: 100%;
   border-radius: 6px;
 }
-.col-3 a h4{
-    
+.col-3 a h4, .col-3 a p{
+    color: #555;
 }
 .footer{
   background: #000;
