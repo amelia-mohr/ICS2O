@@ -171,9 +171,15 @@ nav img{
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
+  opacity: 0;
+  transition: 0.5s;
 }
 .emma:hover .layer{
   background: rgba(30, 63, 22, 0.725);
+}
+.emma:hover .layer h3{
+  bottom: 49%;
+  opacity: 1;
 }
 .emma-name{
   color: #fff;
