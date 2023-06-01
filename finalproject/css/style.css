@@ -140,21 +140,27 @@ nav img{
   border-radius: 10px;
   padding: 50px 0;
   display: flex;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
 .emma:hover{
-
-}
-.emma:hover img{
-  
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .emma img{
   height: 200px;
   margin-left: 30px;
   margin-right: 30px;
   border-radius: 50%;
-
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.emma:hover img{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .emma div h3{
   color: #fff;
   padding: 0;
+}
+.contact{
+  margin: 70px 0;
 }
