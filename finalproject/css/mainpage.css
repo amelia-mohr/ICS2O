@@ -206,10 +206,6 @@ nav img{
   border-radius: 10px;
   text-align: center;
   padding: 100px 0;
-  transition: transform 0.5s;
-}
-.contact-box:hover{
-  transform: translateY(-5px);
 }
 .contact-box h1{
   color: #fff;
