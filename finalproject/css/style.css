@@ -60,7 +60,7 @@ nav img{
   font-size: 62px;
   margin: 10px 0 40px;
 }
-.shop-btn{
+.btn{
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -72,7 +72,7 @@ nav img{
   position: relative;
   cursor: pointer;
 }
-.shop-btn:hover{
+.btn:hover{
   border: 1px solid #c5f13397;
   background: #c5f13397;
   transition: 1s;
@@ -197,4 +197,9 @@ nav img{
   border-radius: 10px;
   text-align: center;
   padding: 100px 0;
+}
+.contact-box h1{
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
 }
