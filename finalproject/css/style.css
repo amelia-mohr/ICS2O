@@ -144,7 +144,7 @@ nav img{
   transition: 0.5s;
 }
 .emma:hover{
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.307);
 }
 .emma img{
   height: 200px;
@@ -155,7 +155,15 @@ nav img{
   transition: 0.5s;
 }
 .emma:hover img{
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  
+}
+.layer{
+  background: rgba(30, 63, 22, 0.725);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
 }
 .emma div h3{
   color: #fff;
