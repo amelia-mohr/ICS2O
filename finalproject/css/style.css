@@ -222,6 +222,7 @@ nav img{
 }
 .ftr-col-1{
   flex: 1;
+  max-width: 100px;
   text-align: center;
 }
 .ftr-col-1 img{
