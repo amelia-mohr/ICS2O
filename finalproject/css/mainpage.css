@@ -121,6 +121,7 @@ nav img{
 }
 .col-3:hover{
   transform: translateY(-5px);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .col-3 a{
   text-decoration: none;
@@ -205,6 +206,10 @@ nav img{
   border-radius: 10px;
   text-align: center;
   padding: 100px 0;
+  transition: transform 0.5s;
+}
+.contact-box:hover{
+  transform: translateY(-5px);
 }
 .contact-box h1{
   color: #fff;
