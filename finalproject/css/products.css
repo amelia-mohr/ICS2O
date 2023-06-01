@@ -56,7 +56,7 @@ nav img{
   padding-right: 25px;
 }
 .title{
-  text-align: left;
+  text-align: center;
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
@@ -70,7 +70,8 @@ nav img{
   border-radius: 5px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .row{
   display: flex;
