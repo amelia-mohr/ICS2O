@@ -46,14 +46,27 @@ nav img{
 .nav-links ul li:hover::after{
   width: 100%;
 }
-.featured{
-  margin: 70px 0;
+.sig-pro-info{
+    margin: 70px 0;
 }
 .small-container{
   max-width: 1080px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.featured{
+  margin: 70px 0;
 }
 .title{
   text-align: center;
@@ -72,12 +85,6 @@ nav img{
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
-.row{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 .col-3{
   flex-basis: 30%;
