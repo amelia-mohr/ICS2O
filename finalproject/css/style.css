@@ -175,7 +175,7 @@ nav img{
 .emma:hover .layer{
   background: rgba(30, 63, 22, 0.725);
 }
-.emma div h3{
+.emma-name{
   color: #fff;
   padding: 0;
 }
