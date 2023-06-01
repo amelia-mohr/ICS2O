@@ -215,8 +215,23 @@ nav img{
 .footer h3{
   color: #fff;
   margin-bottom: 20px;
-
+}
+.ftr-col-1, .ftr-col-2{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.ftr-col-1{
+  flex: 1;
+  text-align: center;
 }
 .ftr-col-1 img{
   width: 150px;
+  margin-bottom: 20px;
+}
+.ftr-col-2{
+  flex-basis: 12%;
+  text-align: center;
+}
+.ftr-col-2 ul{
+  list-style-type: none;
 }
