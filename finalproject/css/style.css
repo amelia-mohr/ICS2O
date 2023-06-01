@@ -138,15 +138,21 @@ nav img{
   width: 80%;
   background: #c5f133e8;
   border-radius: 10px;
-  padding: 100px 0;
-  cursor: pointer;
+  padding: 50px 0;
+  display: flex;
+}
+.emma:hover{
+
+}
+.emma:hover img{
+  
 }
 .emma img{
-  height: 40px;
-  margin-left: 5px;
+  height: 200px;
+  margin-left: 30px;
   margin-right: 30px;
   border-radius: 50%;
-  
+
 }
 .emma div h3{
   color: #fff;
