@@ -91,7 +91,7 @@ nav img{
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
-  color: #000;
+  color: #3b3b3b;
 }
 .title::after{
   content: '';
