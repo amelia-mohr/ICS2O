@@ -154,11 +154,8 @@ nav img{
   box-sizing: border-box;
   transition: 0.5s;
 }
-.emma:hover img{
-  
-}
 .layer{
-  background: rgba(30, 63, 22, 0.725);
+  background: transparent;
   height: 200px;
   width: 200px;
   margin-left: 30px;
@@ -166,6 +163,10 @@ nav img{
   border-radius: 50%;
   position: absolute;
   text-align: center;
+  transition: 0.5s;
+}
+.emma:hover .layer{
+  background: rgba(30, 63, 22, 0.725);
 }
 .emma div h3{
   color: #fff;
