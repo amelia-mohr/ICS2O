@@ -93,12 +93,20 @@ nav img{
   border: 1px solid #eee;
   border-radius: 4px;
   max-width: fit-content;
+  margin-right: 5%;
 }
 .plus{
   color: #555;
+  transform: translateY(1px);
+  padding: 0 10%;
 }
 .minus{
   color: #555;
+  transform: translateY(1px);
+  padding: 0 10%;
+}
+.quantity{
+  padding: 0 15px;
 }
 
 .add-btn{
@@ -109,7 +117,6 @@ nav img{
   display: inline-block;
   padding: 12px 34px;
   font-size: 13px;
-  transform: translateY(-4.5px);
   transition: 0.5s;
 }
 .add-btn:hover{
