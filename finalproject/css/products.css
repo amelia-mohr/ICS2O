@@ -91,6 +91,22 @@ nav img{
   color: #000;
   margin-left: 10px;
 }
+.small-img-row{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  flex-basis: 30%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 
 .featured{
