@@ -64,12 +64,13 @@ nav img{
 .col-2{
   flex-basis: 45%;
   min-width: 300px;
-}
-.sig-pro-info .col-2 img{
-  padding: 0;
-}
-.sig-pro-info .col-2{
   padding: 20px;
+}
+.col-2 img{
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%);
+  margin-bottom: 18px;
 }
 .sig-pro-info h4{
   margin: 20px 0;
@@ -91,17 +92,28 @@ nav img{
   color: #000;
   margin-left: 10px;
 }
-.small-img-row{
+.col-2 .small-img-row{
   display: flex;
   justify-content: space-between;
 }
-.small-img-col{
+.col-2 .small-img-col{
   flex-basis: 30%;
   cursor: pointer;
 }
-
-
-
+.col-2 .small-img-col img{
+  border-radius: 10px;
+}
+.small-img-col .layer{
+  background: transparent;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  position: absolute;
+  transition: 0.5s;
+}
+.small-img-col img:hover .layer{
+  background: rgba(30, 63, 22, 0.725);
+}
 
 
 
