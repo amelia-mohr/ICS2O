@@ -85,13 +85,6 @@ nav img{
   box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%);
   margin-bottom: 18px;
 }
-.sig-pro-info h4{
-  margin: 20px 0;
-  font-size: 22px;
-  padding-top: 5%;
-  border-top: 1px solid #eee;
-  font-weight: bold;
-}
 .sig-pro-info input{
   width: 40px;
   height: 40px;
