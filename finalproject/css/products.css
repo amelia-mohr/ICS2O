@@ -55,9 +55,18 @@ nav img{
   padding-left: 25px;
   padding-right: 25px;
 }
-.row{
+.small-container p{
+  font-size: 13px;
+  color: #555;
+}
+.small-container p a{
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+}
+.row-2{
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -97,9 +106,19 @@ nav img{
   border: 1px solid #000;
   border-radius: 32px;
 }
+.col-2 form h1{
+  font-size: 40px;
+}
+.col-2 p{
+  color: #555;
+}
+.col-2 h3{
+  color: #555;
+}
 .sig-pro-info h3 span{
-  color: #000;
+  color: #555;
   margin-left: 10px;
+  transform: translateY(5px);
 }
 .col-2 .small-img-row{
   display: flex;
@@ -156,6 +175,12 @@ nav img{
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .col-3{
   flex-basis: 30%;
