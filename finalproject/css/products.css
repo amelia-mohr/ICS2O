@@ -62,7 +62,7 @@ nav img{
   justify-content: space-around;
 }
 .col-2{
-  flex-basis: 50%;
+  flex-basis: 45%;
   min-width: 300px;
 }
 .sig-pro-info .col-2 img{
