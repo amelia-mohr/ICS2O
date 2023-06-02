@@ -128,6 +128,23 @@ nav img{
   border-top: 1px solid #eee;
   padding-top: 5%;
 }
+.price-row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 1px solid #eee;
+  padding-top: 5%;
+  margin: 20px 0;
+}
+.price-col{
+  flex-basis: 45%;
+}
+.price-col h4{
+  font-size: 22px;
+  font-weight: bold;
+}
+
 .sig-pro-info h3 span{
   color: #555;
   margin-left: 10px;
