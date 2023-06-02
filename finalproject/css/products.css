@@ -125,13 +125,13 @@ nav img{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: left;
   border-top: 1px solid #eee;
   padding-top: 5%;
   margin: 20px 0;
 }
 .price-col{
-  flex-basis: 45%;
+  flex-basis: 10%;
 }
 .price-col h4{
   font-size: 22px;
