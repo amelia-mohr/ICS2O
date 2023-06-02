@@ -75,13 +75,13 @@
               <div class="other">
                 <div class="quantity-row">
                   <div class="quantity-col">
-                    <span class="plus material-symbols-rounded">add</span>
+                    <span class="plus material-symbols-rounded" id="add">add</span>
                   </div>
                   <div class="quantity-col">
-                    <span class="quantity"></span>
+                    <span class="quantity" id="num">1</span>
                   </div>
                   <div class="quantity-col">
-                    <span class="minus material-symbols-rounded">remove</span>
+                    <span class="minus material-symbols-rounded" id="sub">remove</span>
                   </div>
                 </div>
                 <a href="" class="add-btn">ADD TO CART</a>
@@ -168,21 +168,13 @@
       layer[2].onclick = function(){
         largeImg.src = smallImg[2].src;
       };
-      var plus = document.getElementsByClassName("plus");
-      var minus = document.getElementsByClassName("minus");
-      var quantity = document.getElementsByClassName("quantity");
-      quantity[0] = 1;
-      if (quantity[0] == 1){
-        minus[0].disabled = true;
-      } else {
-        minus[0].disabled = false;
-      };
-      plus[0].onclick = function(){
-        quantity[0] += 1;
-      };
-      minus[0].onclick = function(){
-        quantity[0] -= 1;
-      };
+      const num = document.getElementById("num");
+      const add = document.getElementById("add");
+      const sub = document.getElementById("sub");
+      add.onclick = function(){
+        num.innerHTML++;
+      }
+
     </script>
   </body>
 </html>
