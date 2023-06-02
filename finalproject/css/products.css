@@ -98,12 +98,14 @@ nav img{
 .plus{
   color: #555;
   transform: translateY(1px);
-  padding: 0 10%;
+  margin-left: 2px;
+  cursor: pointer;
 }
 .minus{
   color: #555;
   transform: translateY(1px);
-  padding: 0 10%;
+  margin-right: 2px;
+  cursor: pointer;
 }
 .quantity{
   padding: 0 15px;
