@@ -107,14 +107,24 @@ nav img{
   margin-bottom: 0;
   border-radius: 10px;
   width: 100%;
+  display: block;
 }
 .layer{
-  background: rgba(30, 63, 22, 0.725);
+  background: transparent;
   height: 100%;
   width: 100%;
   position: absolute;
+  border-radius: 10px;
   top: 0;
   left: 0;
+  transition: 0.5s;
+}
+.layer:hover{
+  background: rgba(30, 63, 22, 0.725);
+}
+.layer p{
+  color: transparent;
+  text-align: center;
 }
 
 
