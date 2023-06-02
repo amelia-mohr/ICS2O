@@ -96,7 +96,7 @@ nav img{
   margin-right: 5%;
 }
 .plus{
-  color: #555;
+  color: #8a8a8a;
   transform: translateY(1px);
   margin-left: 2px;
   cursor: pointer;
@@ -109,10 +109,10 @@ nav img{
   transition: 0.5s;
 }
 .plus:hover{
-  box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%)
+  color: #3b3b3b;
 }
 .minus{
-  color: #555;
+  color: #8a8a8a;
   transform: translateY(1px);
   margin-right: 2px;
   cursor: pointer;
@@ -125,7 +125,7 @@ nav img{
   transition: 0.5s;
 }
 .minus:hover{
-  box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%)
+  color: #3b3b3b;
 }
 .quantity{
   padding: 0 15px;
