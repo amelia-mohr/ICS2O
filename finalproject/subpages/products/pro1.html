@@ -172,19 +172,15 @@
       const add = document.getElementById("add");
       const sub = document.getElementById("sub");
       add.onclick = function(){
-        num.innerHTML++;
-      };
-      sub.onmouseover = function(){
-        if (num.innerHTML > 1) {
-          sub.onclick = function(){
-            num.innerHTML--;
-          };
-        } else {
-          sub.style.boxShadow = '';
-          sub.style.cursor = 'pointer';
+        if (num.innerHTML < 9){
+          num.innerHTML++;
         };
       };
-
+      sub.onclick = function(){
+        if (num.innerHTML > 1) {
+          num.innerHTML--;
+        };
+      };
     </script>
   </body>
 </html>
