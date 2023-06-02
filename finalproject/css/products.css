@@ -102,9 +102,18 @@ nav img{
 }
 .add-btn{
   text-decoration: none;
-  color: #000;
-  border: 1px solid #000;
+  color: #fff;
   border-radius: 32px;
+  background: rgba(30, 63, 22, 0.725);
+  display: inline-block;
+  padding: 12px 34px;
+  font-size: 13px;
+  transform: translateY(-4.5px);
+  transition: 0.5s;
+}
+.add-btn:hover{
+  background: #c5f133;
+  color: #000;
 }
 .other{
   border-top: 1px solid #eee;
