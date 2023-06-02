@@ -91,6 +91,12 @@ nav img{
 .sig-pro-info input:focus{
   outline: none;
 }
+.add-btn{
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 32px;
+}
 .sig-pro-info h3 span{
   color: #000;
   margin-left: 10px;
