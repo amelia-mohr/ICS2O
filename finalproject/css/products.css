@@ -99,11 +99,22 @@ nav img{
 .col-2 .small-img-col{
   flex-basis: 30%;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 .col-2 .small-img-col img{
   box-shadow: none;
   margin-bottom: 0;
   border-radius: 10px;
+  width: 100%;
+}
+.layer{
+  background: rgba(30, 63, 22, 0.725);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
