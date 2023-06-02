@@ -100,12 +100,22 @@ nav img{
   transform: translateY(1px);
   margin-left: 2px;
   cursor: pointer;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+.plus:hover{
+  box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%)
 }
 .minus{
   color: #555;
   transform: translateY(1px);
   margin-right: 2px;
   cursor: pointer;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+.minus:hover{
+  box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%)
 }
 .quantity{
   padding: 0 15px;
