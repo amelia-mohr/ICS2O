@@ -120,7 +120,7 @@ nav img{
   transition: 0.5s;
 }
 .layer:hover{
-  background: rgba(30, 63, 22, 0.725);
+  background: rgba(30, 63, 22, 0.538);
 }
 .layer p{
   color: transparent;
