@@ -177,9 +177,11 @@
       sub.onclick = function(){
         if (num.innerHTML > 1) {
           num.innerHTML--;
+        } else {
+          sub.style.boxShadow = '';
+          sub.style.cursor = 'pointer';
         };
       };
-
       
     </script>
   </body>
