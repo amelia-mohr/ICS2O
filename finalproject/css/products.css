@@ -97,10 +97,10 @@ nav img{
 .quantity-col{
   flex-basis: 30%;
 }
-.plus span{
+.plus{
   color: #555;
 }
-.minus span{
+.minus{
   color: #555;
 }
 
