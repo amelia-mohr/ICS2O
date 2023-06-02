@@ -176,7 +176,7 @@
       };
       if (num.innerHTML == 1){
         sub.style.cursor = "not-allowed";
-      } else {
+      } else if (num.innerHTML != 1){
         sub.onclick = function(){
           num.innerHTML--;
         };
