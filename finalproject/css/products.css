@@ -94,9 +94,6 @@ nav img{
   border-radius: 4px;
   max-width: fit-content;
 }
-.quantity-col{
-  flex-basis: 30%;
-}
 .plus{
   color: #555;
 }
