@@ -136,13 +136,14 @@
     <script>
       var largeImg = document.getElementById("largeImg");
       var smallImg = document.getElementsByClassName("smallImg");
-      smallImg[0].onclick = function(){
+      var layer = document.getElementsByClassName("layer");
+      layer[0].onclick = function(){
         largeImg.src = smallImg[0].src;
       }
-      smallImg[1].onclick = function(){
+      layer[1].onclick = function(){
         largeImg.src = smallImg[1].src;
       }
-      smallImg[2].onclick = function(){
+      layer[2].onclick = function(){
         largeImg.src = smallImg[2].src;
       }
     </script>
