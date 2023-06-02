@@ -174,15 +174,17 @@
       add.onclick = function(){
         num.innerHTML++;
       };
-      sub.onclick = function(){
+      sub.onmouseover = function(){
         if (num.innerHTML > 1) {
-          num.innerHTML--;
+          sub.onclick = function(){
+            num.innerHTML--;
+          };
         } else {
           sub.style.boxShadow = '';
           sub.style.cursor = 'pointer';
         };
       };
-      
+
     </script>
   </body>
 </html>
