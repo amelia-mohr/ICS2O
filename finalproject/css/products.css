@@ -47,7 +47,7 @@ nav img{
   width: 100%;
 }
 .sig-pro-info{
-    margin: 70px 0;
+  margin-top: 80px;
 }
 .small-container{
   max-width: 1080px;
@@ -65,6 +65,34 @@ nav img{
   flex-basis: 50%;
   min-width: 300px;
 }
+.sig-pro-info .col-2 img{
+  padding: 0;
+}
+.sig-pro-info .col-2{
+  padding: 20px;
+}
+.sig-pro-info h4{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.sig-pro-info input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #000;
+}
+.sig-pro-info input:focus{
+  outline: none;
+}
+.sig-pro-info h3 span{
+  color: #000;
+  margin-left: 10px;
+}
+
+
 .featured{
   margin: 70px 0;
 }
