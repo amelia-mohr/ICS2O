@@ -78,7 +78,7 @@
                     <span class="plus material-symbols-rounded">add</span>
                   </div>
                   <div class="quantity-col">
-                    <span class="quantity">1</span>
+                    <span class="quantity"></span>
                   </div>
                   <div class="quantity-col">
                     <span class="minus material-symbols-rounded">remove</span>
@@ -167,7 +167,22 @@
       }
       layer[2].onclick = function(){
         largeImg.src = smallImg[2].src;
-      }
+      };
+      var plus = document.getElementsByClassName("plus");
+      var minus = document.getElementsByClassName("minus");
+      var quantity = document.getElementsByClassName("quantity");
+      quantity[0] = 1;
+      if (quantity[0] == 1){
+        minus[0].disabled = true;
+      } else {
+        minus[0].disabled = false;
+      };
+      plus[0].onclick = function(){
+        quantity[0] += 1;
+      };
+      minus[0].onclick = function(){
+        quantity[0] -= 1;
+      };
     </script>
   </body>
 </html>
