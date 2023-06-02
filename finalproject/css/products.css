@@ -88,6 +88,8 @@ nav img{
 .sig-pro-info h4{
   margin: 20px 0;
   font-size: 22px;
+  padding-top: 5%;
+  border-top: 1px solid #eee;
   font-weight: bold;
 }
 .sig-pro-info input{
@@ -100,6 +102,7 @@ nav img{
   text-align: center;
   margin-right: 10px;
   border: 1px solid #000;
+  margin-top: 5%;
 }
 .sig-pro-info input:focus{
   outline: none;
@@ -110,6 +113,9 @@ nav img{
   border: 1px solid #000;
   border-radius: 32px;
 }
+.col-2 form div{
+  border-top: 1px solid #eee;
+}
 .col-2 form h1{
   font-size: 40px;
 }
@@ -119,6 +125,8 @@ nav img{
 }
 .col-2 h3{
   color: #555;
+  border-top: 1px solid #eee;
+  padding-top: 5%;
 }
 .sig-pro-info h3 span{
   color: #555;
