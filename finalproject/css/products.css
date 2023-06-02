@@ -92,6 +92,7 @@ nav img{
   justify-content: left;
   border: 1px solid #eee;
   border-radius: 4px;
+  max-width: fit-content;
 }
 .quantity-col{
   flex-basis: 30%;
@@ -120,6 +121,8 @@ nav img{
 }
 .other{
   border-top: 1px solid #eee;
+  padding-top: 5%;
+  display: flex;
 }
 .col-2 form h1{
   font-size: 40px;
