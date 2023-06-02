@@ -86,10 +86,21 @@ nav img{
   margin-bottom: 18px;
 }
 .quantity-row{
-
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: left;
+  border: 1px solid #eee;
+  border-radius: 4px;
 }
 .quantity-col{
-  
+  flex-basis: 30%;
+}
+.plus span{
+  color: #555;
+}
+.minus span{
+  color: #555;
 }
 
 .add-btn{
