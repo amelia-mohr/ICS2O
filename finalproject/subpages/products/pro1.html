@@ -174,13 +174,22 @@
       add.onclick = function(){
         num.innerHTML++;
       };
+      sub.onclick = function(){
+        
+        num.innerHTML--;
+        
+      };
+
+      <!-- 
+      sub.style.cursor = "not-allowed";
       if (num.innerHTML == 1){
         sub.style.cursor = "not-allowed";
       } else if (num.innerHTML != 1){
         sub.onclick = function(){
           num.innerHTML--;
         };
-      };
+      }; 
+      -->
     </script>
   </body>
 </html>
