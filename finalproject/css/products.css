@@ -85,21 +85,13 @@ nav img{
   box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%);
   margin-bottom: 18px;
 }
-.sig-pro-info input{
-  width: 40px;
-  height: 40px;
-  padding-left: 10px;
-  padding-right: 0;
-  border-radius: 15px;
-  font-size: 20px;
-  text-align: center;
-  margin-right: 10px;
-  border: 1px solid #000;
-  margin-top: 5%;
+.quantity-row{
+
 }
-.sig-pro-info input:focus{
-  outline: none;
+.quantity-col{
+  
 }
+
 .add-btn{
   text-decoration: none;
   color: #fff;
