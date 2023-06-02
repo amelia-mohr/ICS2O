@@ -101,6 +101,11 @@ nav img{
   margin-left: 2px;
   cursor: pointer;
   border-radius: 2px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   transition: 0.5s;
 }
 .plus:hover{
@@ -112,6 +117,11 @@ nav img{
   margin-right: 2px;
   cursor: pointer;
   border-radius: 2px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   transition: 0.5s;
 }
 .minus:hover{
