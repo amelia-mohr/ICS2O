@@ -101,6 +101,8 @@ nav img{
   cursor: pointer;
 }
 .col-2 .small-img-col img{
+  box-shadow: none;
+  margin-bottom: 0;
   border-radius: 10px;
 }
 .small-img-col .layer{
