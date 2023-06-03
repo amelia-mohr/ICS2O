@@ -168,6 +168,9 @@ nav img{
   box-sizing: border-box;
   transition: 0.5s;
 }
+.emma div{
+  margin-right: 30px;
+}
 .layer{
   background: transparent;
   height: 200px;
