@@ -84,11 +84,6 @@ nav img{
   display: flex;
   justify-content: space-between;
 }
-.img-box{
-  display: block;
-  margin: 5px;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
 .main-image img{
   display: block;
   padding: 0;
@@ -97,7 +92,7 @@ nav img{
   width: 100%;
 }
 .card-left{
-  
+  overflow: hidden;
 }
 .img-select{
   display: flex;
