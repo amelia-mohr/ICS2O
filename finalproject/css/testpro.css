@@ -87,6 +87,7 @@ nav img{
   display: block;
   padding: 0;
   margin-bottom: 18px;
+  width: 100%;
 }
 .card-left{
   overflow: hidden;
