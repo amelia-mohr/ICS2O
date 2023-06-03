@@ -42,6 +42,7 @@ nav img{
   display: block;
   margin: auto; 
   transition: 0.5s;
+  border-radius: 5px;
 }
 .nav-links ul li:hover::after{
   width: 100%;
