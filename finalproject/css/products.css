@@ -99,7 +99,7 @@ nav img{
 .plus{
   color: #8a8a8a;
   transform: translateY(1px);
-  margin-left: 2px;
+  margin-right: 4px;
   cursor: pointer;
   border-radius: 2px;
   -webkit-user-select: none;
@@ -114,7 +114,7 @@ nav img{
 .minus{
   color: #8a8a8a;
   transform: translateY(1px);
-  margin-right: 2px;
+  margin-left: 2px;
   cursor: pointer;
   border-radius: 2px;
   -webkit-user-select: none;
