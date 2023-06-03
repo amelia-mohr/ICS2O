@@ -44,9 +44,13 @@ nav img{
   margin: auto; 
   transition: 0.5s;
 }
-.nav-links ul li:hover::after,
-.nav-links ul li.active::after{
+.nav-links ul li:hover::after{
   width: 100%;
+}
+.nav-links ul li.active::after{
+  width: 70%;
+  left: 0;
+  margin: 0;
 }
 .text-box{
   width: 90%;
