@@ -142,9 +142,11 @@ nav img{
 #cart-close{
   position: absolute;
   top: 0;
-  left: 0;
-  font-size: 24px;
+  right: 0;
+  font-size: 30px;
   cursor: pointer;
+  margin-top: 5%;
+  margin-right: 5%;
 }
 
 
