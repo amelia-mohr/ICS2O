@@ -130,13 +130,8 @@ nav img{
 .final{
   text-align: left;
 }
-.total{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
 .total h2{
-  margin-left: 5%;
+  margin: 5px 0;
 }
 .remove span{
   font-size: 33px;
