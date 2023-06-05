@@ -92,6 +92,7 @@ nav img{
 }
 .cart-content{
   text-align: left;
+  margin-bottom: 10%;
 }
 .cart-box{
   display: flex;
@@ -130,6 +131,11 @@ nav img{
 .final{
   text-align: left;
 }
+.total{
+  display: felx;
+  justify-content: start;
+}
+.total h4
 
 
 
