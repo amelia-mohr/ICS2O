@@ -139,7 +139,9 @@ nav img{
 .total h2{
   margin-left: 5%;
 }
-
+.remove span{
+  font-size: 33px;
+}
 
 
 .featured{
