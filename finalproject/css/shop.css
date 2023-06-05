@@ -97,7 +97,8 @@ nav img{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5%;
 }
 .cart-box img{
 
