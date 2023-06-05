@@ -36,6 +36,7 @@ nav img{
 }
 .nav-links ul li a span{
   font-size: 30px;
+  cursor: pointer;
 }
 .nav-links ul li::after{
   content: '';
