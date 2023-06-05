@@ -103,11 +103,11 @@ nav img{
 cart-img{
   width: 75px;
   object-fit: cover;
-  border: 1px solid #8a8a8a;
   padding: 2px;
 }
 .detail-box{
-  margin-left: 5px;
+  margin-left: 15px;
+  max-width: 50%;
 }
 
 
