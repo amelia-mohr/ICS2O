@@ -9,3 +9,14 @@ btnCart.addEventListener('click', () => {
 btnClose.addEventListener('click', () => {
     cart.classList.remove('cart-active');
 });
+
+
+document.addEventListener('DOMContentLoaded',loadProducts);
+
+function loadProducts(){
+    loadContent();
+};
+
+function loadContent(){
+
+};
