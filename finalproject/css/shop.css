@@ -109,6 +109,13 @@ cart-img{
   margin-left: 15px;
   max-width: 50%;
 }
+.price-box{
+  display: flex;
+  justify-content: space-around;
+}
+.price-box p{
+  font-size: 14px;
+}
 
 
 .featured{
