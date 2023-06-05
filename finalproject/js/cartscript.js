@@ -28,19 +28,29 @@ function loadContent(){
     const num = document.getElementById("num");
     const add = document.getElementById("add");
     const sub = document.getElementById("sub");
-    add.onclick = function(){
-      if (num.innerHTML < 9){
-        num.innerHTML++;
-      };
-    };
-    sub.onclick = function(){
-      if (num.innerHTML > 1) {
-        num.innerHTML--;
-      };
-    };
+    add.forEach((btn) => {
+        btn.addEventListener('click', increaseQty);
+    });
+    sub.forEach((btn) => {
+        btn.addEventListener('click', lowerQty);
+    });
 };
 
 // Remove Item
 function removeItem(){
     this.parentElement.remove();
+};
+
+//Lower Quantity
+function lowerQty(){
+    if (num.innerHTML > 1) {
+        num.innerHTML--;
+    };
+};
+
+//Increase Quantity
+function increaseQty(){
+    if (num.innerHTML < 9){
+        num.innerHTML++;
+    };
 };
