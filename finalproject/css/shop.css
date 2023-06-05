@@ -59,7 +59,11 @@ nav img{
 .numofitems{
   position: absolute;
   color: #fff;
+  top: 0;
   right: 0;
+  margin-right: 43%;
+  margin-top: 30%;
+  font-size: 12px;
 }
 .cart{
   position: fixed;
