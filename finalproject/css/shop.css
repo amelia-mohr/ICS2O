@@ -124,9 +124,13 @@ nav img{
 .price-box h4{
   margin-left: 10%;
 }
+.product-quant{
+  font-size: 16px;
+}
 .final{
   text-align: left;
 }
+
 
 
 .featured{
