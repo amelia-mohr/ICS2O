@@ -25,11 +25,19 @@ function loadContent(){
     });
 
     // Product Item Change Event
-    let changeqty = document.querySelectorAll('.product-quant');
-    changeqty.forEach((span) => {
-        span.addEventListener('click', removeItem);
-    });
-
+    const num = document.getElementById("num");
+    const add = document.getElementById("add");
+    const sub = document.getElementById("sub");
+    add.onclick = function(){
+      if (num.innerHTML < 9){
+        num.innerHTML++;
+      };
+    };
+    sub.onclick = function(){
+      if (num.innerHTML > 1) {
+        num.innerHTML--;
+      };
+    };
 };
 
 // Remove Item
