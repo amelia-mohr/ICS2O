@@ -55,7 +55,6 @@ nav img{
   left: 0;
   margin: 0;
 }
-
 .cart{
   position: fixed;
   top: 0;
@@ -132,7 +131,7 @@ nav img{
   text-align: left;
 }
 .total{
-  display: felx;
+  display: flex;
   justify-content: start;
   align-items: center;
 }
@@ -141,7 +140,10 @@ nav img{
 }
 .remove span{
   font-size: 33px;
+  color: rgb(187, 0, 0);
+  cursor: pointer;
 }
+
 
 
 .featured{
