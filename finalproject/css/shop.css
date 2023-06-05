@@ -113,9 +113,6 @@ nav img{
 .detail-box h3{
   margin-bottom: 5%;
 }
-.detail-box p{
-  font-size: 14px;
-}
 .price-box{
   display: flex;
   justify-content: start;
@@ -126,6 +123,10 @@ nav img{
 }
 .price-box h4{
   margin-left: 10%;
+}
+.qty{
+  display: flex;
+  justify-content: start;
 }
 .product-quant{
   font-size: 16px;

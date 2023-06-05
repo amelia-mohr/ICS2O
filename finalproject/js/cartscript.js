@@ -23,6 +23,13 @@ function loadContent(){
     btnRemove.forEach((btn) => {
         btn.addEventListener('click', removeItem);
     });
+
+    // Product Item Change Event
+    let changeqty = document.querySelectorAll('.product-quant');
+    changeqty.forEach((span) => {
+        span.addEventListener('click', removeItem);
+    });
+
 };
 
 // Remove Item
