@@ -134,8 +134,11 @@ nav img{
 .total{
   display: felx;
   justify-content: start;
+  align-items: center;
 }
-.total h4
+.total h2{
+  margin-left: 5%;
+}
 
 
 
