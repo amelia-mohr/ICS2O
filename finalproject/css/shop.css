@@ -136,7 +136,7 @@ nav img{
 .total h2{
   margin: 5px 0;
 }
-.remove span{
+.remove{
   font-size: 33px;
   color: rgb(187, 0, 0);
   cursor: pointer;

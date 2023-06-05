@@ -18,5 +18,14 @@ function loadProducts(){
 };
 
 function loadContent(){
+    //Remove Items From Cart
+    let btnRemove = document.querySelectorAll('.remove');
+    btnRemove.forEach((btn) => {
+        btn.addEventListener('click', removeItem);
+    });
+};
 
+// Remove Item
+function removeItem(){
+    this.parentElement.remove();
 };
