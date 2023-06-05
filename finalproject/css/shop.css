@@ -138,7 +138,13 @@ nav img{
   color: rgb(187, 0, 0);
   cursor: pointer;
 }
-
+#cart-close{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  
+}
 
 
 .featured{
