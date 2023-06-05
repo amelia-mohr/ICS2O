@@ -93,6 +93,13 @@ nav img{
 .cart-content{
   text-align: left;
 }
+.cart-box{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
 .cart-box img{
 
 }
