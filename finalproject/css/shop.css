@@ -58,6 +58,8 @@ nav img{
 }
 .numofitems{
   position: absolute;
+  color: #fff;
+  right: 0;
 }
 .cart{
   position: fixed;
