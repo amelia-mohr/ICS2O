@@ -100,10 +100,9 @@ nav img{
   border-bottom: 1px solid #eee;
   padding-bottom: 5%;
 }
-cart-img{
-  width: 75px;
-  object-fit: cover;
+.cart-img{
   padding: 2px;
+  border-radius: 6px;
 }
 .detail-box{
   margin-left: 15px;
