@@ -28,7 +28,47 @@
             <li><a href="../mainpage.html">HOME</a></li>
             <li><a href="shop.html">SHOP</a></li>
             <li class="active"><a href="contact.html">CONTACT</a></li>
-            <li><a href="shoppingbag.html"><span class="material-symbols-rounded">shopping_bag</span></a></li>
+            <li>
+              <a id="bag"><span class="material-symbols-rounded">shopping_bag</span></a>
+              <div class="numofitems"><p>0</p></div>
+            </li>
+            <div class="cart">
+              <h3 class="cart-title">Your Items</h3>
+              <div class="cart-content">
+                <div class="cart-box">
+                  <img src="../images/puppic1.jpg" class="cart-img">
+                  <div class="detail-box">
+                    <h3>Product 1</h3>
+                    <div class="price-box">
+                      <p>Price:</p>
+                      <h4>$00.00</h4>
+                    </div>
+                    <p>Quantity: <span class="product-quant">1</span></p>
+                  </div>
+                  <span class="remove material-symbols-rounded">delete</span>
+                </div>
+                <div class="cart-box">
+                  <img src="../images/puppic1.jpg" class="cart-img">
+                  <div class="detail-box">
+                    <h3>Product 1</h3>
+                    <div class="price-box">
+                      <p>Price:</p>
+                      <h4>$00.00</h4>
+                    </div>
+                    <p>Quantity: <span class="product-quant">1</span></p>
+                  </div>
+                  <span class="remove material-symbols-rounded">delete</span>
+                </div>
+              </div>
+              <div class="final">
+                <div class="total">
+                  <h4>Total: </h4>
+                  <h2>$00.00</h2>
+                </div>
+                <a href="" class="buy-btn">CHECKOUT</a>
+                <span class="material-symbols-rounded" id="cart-close">close</span>
+              </div>
+            </div>
           </ul>
         </div>
       </nav>
