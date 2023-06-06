@@ -62,8 +62,13 @@ nav img{
   top: 0;
   right: 0;
   margin-right: 43.6%;
-    margin-top: 33%;
-    font-size: 11px;
+  margin-top: 33%;
+  font-size: 11px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .cart{
   position: fixed;
