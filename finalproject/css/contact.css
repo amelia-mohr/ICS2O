@@ -36,6 +36,12 @@ nav img{
 }
 .nav-links ul li a span{
   font-size: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .nav-links ul li::after{
   content: '';
@@ -63,6 +69,7 @@ nav img{
   margin-right: 43.6%;
   margin-top: 33%;
   font-size: 11px;
+  cursor: pointer;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -moz-user-select: none;
