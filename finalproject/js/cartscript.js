@@ -26,8 +26,8 @@ function loadContent(){
     });
     //Add to Cart
     let btnAddBag1 = document.querySelectorAll('#add-bag-1');
-    let btnAddBag2 = document.querySelectorAll('#add-bag-2');
-    let btnAddBag3 = document.querySelectorAll('#add-bag-3');
+    //let btnAddBag2 = document.querySelectorAll('#add-bag-2');
+    //let btnAddBag3 = document.querySelectorAll('#add-bag-3');
     btnAddBag1.addEventListener('click', addBag1);
     //btnAddBag2.addEventListener('click', addBag2);
     //btnAddBag3.addEventListener('click', addBag3);
