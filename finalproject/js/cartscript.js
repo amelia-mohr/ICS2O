@@ -25,9 +25,7 @@ function loadContent(){
     });
     //Add to Cart
     let btnAddBag1 = document.querySelectorAll('#add-bag-1');
-    btnAddBag1.addEventListener('click', () => {
-        console.log('Add btn Clicked!');
-    });
+    btnAddBag1.addEventListener('click', addBag1);
 };
 
 // Remove Item
