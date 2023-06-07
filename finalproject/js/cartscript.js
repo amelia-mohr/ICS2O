@@ -24,6 +24,8 @@ function loadContent(){
     btnRemove.forEach((btn) => {
         btn.addEventListener('click', removeItem);
     });
+    //Add to Cart
+    let btnAddCart = document.querySelectorAll('.add-btn');
     
 };
 
