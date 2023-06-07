@@ -3,7 +3,6 @@ const cart = document.querySelector('.cart');
 const btnClose = document.querySelector('#cart-close');
 
 btnCart.addEventListener('click', () => {
-    console.log('Clicked!');
     cart.classList.add('cart-active');
 });
 
