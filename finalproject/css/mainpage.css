@@ -168,6 +168,10 @@ nav img{
   font-size: 13px;
   text-align: center;
   margin: 5% 30% 0 30%;
+  transition: 0.5s;
+}
+.buy-btn:hover{
+
 }
 .remove{
   font-size: 33px;
