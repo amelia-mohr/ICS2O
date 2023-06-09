@@ -88,6 +88,7 @@ nav img{
   padding-left: 25px;
   padding-right: 25px;
   align-items: center;
+  display: table;
 }
 .title{
   text-align: left;
