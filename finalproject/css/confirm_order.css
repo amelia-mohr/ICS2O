@@ -90,6 +90,12 @@ nav img{
   align-items: center;
   display: table;
 }
+.small-container table{
+  min-width: 100vh;
+}
+.small-container table th{
+  padding-bottom: 5%;
+}
 .title{
   text-align: left;
   margin: 0 auto 80px;
