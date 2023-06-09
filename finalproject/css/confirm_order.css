@@ -57,9 +57,7 @@ nav img{
   width: 100%;
 }
 .nav-links ul li.active::after{
-  width: 70%;
-  left: 0;
-  margin: 0;
+  width: 100%;
 }
 .numofitems{
   position: absolute;
