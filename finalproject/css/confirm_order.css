@@ -91,10 +91,10 @@ nav img{
   display: table;
 }
 .small-container table{
-  min-width: 100vh;
+  min-width: 140vh;
 }
 .small-container table th{
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 .title{
   text-align: left;
