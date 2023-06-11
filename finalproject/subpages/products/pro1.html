@@ -254,9 +254,16 @@
           console.log('This is coming')
           let obj = JSON.parse(c);
 
+          // look through all the items in the bag
+          // if we find our current item add to the count
           for (const [key, value] of Object.entries(obj)) {
             console.log(key, value);
+            if (key == 'puppy1') {
+              obj['puppy1'] = value + num.innerHTML;
+            }
           }
+
+          document.cooker = "cart=" + JSON.stringify(obj);
 
           
         }
