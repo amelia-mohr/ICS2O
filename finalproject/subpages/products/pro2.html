@@ -240,7 +240,8 @@
       sub.onclick = function(){
         if (num.innerHTML > 1) {
           num.innerHTML--;
-          price.innerHTML = cost * num.innerHTML;
+          const result = cost * num.innerHTML;
+          price.innerHTML = result.toFixed(2);
         };
       };
 
