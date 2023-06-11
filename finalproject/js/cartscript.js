@@ -26,6 +26,7 @@ function loadContent(){
     //Add to Cart
     // btnAddBag1 = document.querySelectorAll('#add-bag-1.add-btn');
     //btnAddBag1.addEventListener('click', addBag1);
+    console.log('bag page loaded');
     console.log(decodeURIComponent(document.cookie));
 };
 
