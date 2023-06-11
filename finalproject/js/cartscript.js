@@ -26,6 +26,7 @@ function loadContent(){
     //Add to Cart
     // btnAddBag1 = document.querySelectorAll('#add-bag-1.add-btn');
     //btnAddBag1.addEventListener('click', addBag1);
+    console.log(document.cookie);
 };
 
 // Remove Item
@@ -34,6 +35,3 @@ function removeItem(){
 };
 
 //Add Cart
-function addBag1(){
-    console.log('Add btn Clicked!');
-};
