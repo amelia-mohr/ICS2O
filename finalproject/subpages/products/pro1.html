@@ -259,7 +259,7 @@
           for (const [key, value] of Object.entries(obj)) {
             console.log(key, value);
             if (key == 'puppy1') {
-              obj['puppy1'] = value + num.innerHTML;
+              obj['puppy1'] = parseInt(value) + num.innerHTML;
             }
           }
 
