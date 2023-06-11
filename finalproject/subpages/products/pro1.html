@@ -251,7 +251,7 @@
           document.cookie = "cart=" + JSON.stringify({puppy1: num.innerHTML});
         } else {
           // we need to load the cookie from a string to dictionary
-          console.log('This is coming')
+          console.log('This is coming');
           let obj = JSON.parse(c);
 
           let found = false;
@@ -265,20 +265,20 @@
                
               if (total > 9) {
                 total = 9;
-              }
+              };
 
-              obj['puppy1'] = total
+              obj['puppy1'] = total;
 
               found = true;
-            }
-          }
+            };
+          };
 
           if (!found) {
             obj['puppy1'] = num.innerHTML;
-          }
+          };
 
           document.cookie = "cart=" + JSON.stringify(obj);     
-        }
+        };
         
         
       });
