@@ -252,6 +252,13 @@
         } else {
           // we need to load the cookie from a string to dictionary
           console.log('This is coming')
+          let obj = JSON.parse(c);
+
+          for (const [key, value] of Object.entries(obj)) {
+            console.log(key, value);
+          }
+
+          
         }
         
         
