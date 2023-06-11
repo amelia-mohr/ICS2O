@@ -262,6 +262,9 @@
             console.log(key, value);
             if (key == 'puppy1') {
               obj['puppy1'] = parseInt(value) + parseInt(num.innerHTML);
+              if (obj['puppy1'] > 9) {
+                obj['puppy1'] = 9;
+              }
               found = true;
             }
           }
