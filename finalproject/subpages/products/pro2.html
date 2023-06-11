@@ -109,7 +109,7 @@
                   <p>Price:</p>
                 </div>
                 <div class="price-col">
-                  <h4>$00.00</h4>
+                  <h4 id="price2">$10.00</h4>
                 </div>
               </div>
               <div class="other">
@@ -228,9 +228,11 @@
       const num = document.getElementById("num");
       const add = document.getElementById("add");
       const sub = document.getElementById("sub");
+      const price = document.getElementById("price2");
       add.onclick = function(){
         if (num.innerHTML < 9){
           num.innerHTML++;
+          price.innerHTML*=num;
         };
       };
       sub.onclick = function(){
@@ -238,6 +240,7 @@
           num.innerHTML--;
         };
       };
+
 
       var btnAddBag2 = document.getElementById('add-bag-2');
       btnAddBag2.addEventListener('click', () => {
