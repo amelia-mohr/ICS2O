@@ -254,18 +254,23 @@
           console.log('This is coming')
           let obj = JSON.parse(c);
 
+          let found = false;
+
           // look through all the items in the bag
           // if we find our current item add to the count
           for (const [key, value] of Object.entries(obj)) {
             console.log(key, value);
             if (key == 'puppy1') {
               obj['puppy1'] = parseInt(value) + num.innerHTML;
+              found = true;
             }
           }
 
-          document.cookie = "cart=" + JSON.stringify(obj);
+          if (!found) {
+            obj['puppy1'] = num.innerHTML;
+          }
 
-          
+          document.cookie = "cart=" + JSON.stringify(obj);     
         }
         
         
