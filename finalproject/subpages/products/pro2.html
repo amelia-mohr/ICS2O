@@ -229,10 +229,11 @@
       const add = document.getElementById("add");
       const sub = document.getElementById("sub");
       const price = document.getElementById("price2");
+      const cost = 10.00;
       add.onclick = function(){
         if (num.innerHTML < 9){
           num.innerHTML++;
-          price.innerHTML*=num.innerHTML;
+          price.innerHTML = cost * num.innerHTML;
         };
       };
       sub.onclick = function(){
