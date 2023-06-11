@@ -225,7 +225,7 @@
       var btnAddBag1 = document.getElementById('add-bag-1');
       btnAddBag1.addEventListener('click', () => {
         console.log('clicked the button');
-        document.cookie = "hi=" + JSON.stringify({item: 'puppy1', count: num}) + ";path=/ameilia";
+        document.cookie = "hi=" + JSON.stringify({item: 'puppy1', count: num.innerHTML}) + ";path=/ameilia";
       });
     </script>
     <script src="../../js/cartscript.js"></script>
