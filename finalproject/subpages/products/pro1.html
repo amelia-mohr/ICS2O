@@ -243,7 +243,18 @@
       btnAddBag1.addEventListener('click', () => {
         console.log('clicked the button');
         console.log(getCookie("cart"));
-        document.cookie = "cart=" + JSON.stringify({item: 'puppy1', count: num.innerHTML});
+
+        let c = getCookie("cart");
+
+        if (c == null) {
+          // we have nothing in the cookie so just add our item
+          document.cookie = "cart=" + JSON.stringify({puppy1: num.innerHTML});
+        } else {
+          // we need to load the cookie from a string to dictionary
+          console.log('This is coming')
+        }
+        
+        
       });
     </script>
     <script src="../../js/cartscript.js"></script>
