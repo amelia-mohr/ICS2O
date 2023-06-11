@@ -233,13 +233,13 @@
       add.onclick = function(){
         if (num.innerHTML < 9){
           num.innerHTML++;
-          price.innerHTML+=cost;
+          price.innerHTML = cost * num.innerHTML;
         };
       };
       sub.onclick = function(){
         if (num.innerHTML > 1) {
           num.innerHTML--;
-          price.innerHTML-=cost;
+          price.innerHTML = cost * num.innerHTML;
         };
       };
 
