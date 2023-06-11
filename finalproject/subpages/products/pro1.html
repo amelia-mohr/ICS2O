@@ -199,6 +199,23 @@
       var largeImg = document.getElementById("largeImg");
       var smallImg = document.getElementsByClassName("smallImg");
       var layer = document.getElementsByClassName("layer");
+
+      function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return null;
+      }
+      
       layer[0].onclick = function(){
         largeImg.src = smallImg[0].src;
       }
@@ -225,7 +242,8 @@
       var btnAddBag1 = document.getElementById('add-bag-1');
       btnAddBag1.addEventListener('click', () => {
         console.log('clicked the button');
-        document.cookie = "hi=" + JSON.stringify({item: 'puppy1', count: num.innerHTML});
+        console.log(getCookie("cart"));
+        document.cookie = "cart=" + JSON.stringify({item: 'puppy1', count: num.innerHTML});
       });
     </script>
     <script src="../../js/cartscript.js"></script>
