@@ -261,10 +261,14 @@
           for (const [key, value] of Object.entries(obj)) {
             console.log(key, value);
             if (key == 'puppy1') {
-              obj['puppy1'] = parseInt(value) + parseInt(num.innerHTML);
-              if (obj['puppy1'] > 9) {
-                obj['puppy1'] = 9;
+              let total = parseInt(value) + parseInt(num.innerHTML);
+               
+              if (total > 9) {
+                total = 9;
               }
+
+              obj['puppy1'] = total
+
               found = true;
             }
           }
