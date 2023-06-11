@@ -24,7 +24,7 @@ function loadContent(){
         btn.addEventListener('click', removeItem);
     });
     //Add to Cart
-    let btnAddBag1 = document.querySelectorAll('#add-bag-1');
+    let btnAddBag1 = document.querySelectorAll('#add-bag-1.add-btn');
     btnAddBag1.addEventListener('click', addBag1);
 };
 
