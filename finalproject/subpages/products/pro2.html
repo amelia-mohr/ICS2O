@@ -124,7 +124,7 @@
                     <span class="plus material-symbols-rounded" id="add">add</span>
                   </div>
                 </div>
-                <a href="" class="add-btn" id="add-bag-2">ADD TO BAG</a>
+                <span class="add-btn" id="add-bag-2">ADD TO BAG</span>
               </div>
             </form>
             <br>
@@ -221,6 +221,49 @@
           num.innerHTML--;
         };
       };
+
+      var btnAddBag2 = document.getElementById('add-bag-2');
+      btnAddBag2.addEventListener('click', () => {
+        console.log('clicked the button');
+        console.log(getCookie("cart"));
+
+        let c = getCookie("cart");
+
+        if (c == null) {
+          // we have nothing in the cookie so just add our item
+          document.cookie = "cart=" + JSON.stringify({puppy2: num.innerHTML});
+        } else {
+          // we need to load the cookie from a string to dictionary
+          let obj = JSON.parse(c);
+
+          let found = false;
+
+          // look through all the items in the bag
+          // if we find our current item add to the count
+          for (const [key, value] of Object.entries(obj)) {
+            console.log(key, value);
+            if (key == 'puppy2') {
+              let total = parseInt(value) + parseInt(num.innerHTML);
+               
+              if (total > 9) {
+                total = 9;
+              };
+
+              obj['puppy2'] = total;
+
+              found = true;
+            };
+          };
+
+          if (!found) {
+            obj['puppy2'] = num.innerHTML;
+          };
+
+          document.cookie = "cart=" + JSON.stringify(obj);     
+        };
+        
+        
+      });
     </script>
     <script src="../../js/cartscript.js"></script>
   </body>
