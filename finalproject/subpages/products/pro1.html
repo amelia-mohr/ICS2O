@@ -248,46 +248,31 @@
 
       var btnAddBag1 = document.getElementById('add-bag-1');
       btnAddBag1.addEventListener('click', () => {
-        console.log('clicked the button');
-        console.log(getCookie("cart"));
-
         let c = getCookie("cart");
-
         if (c == null) {
           // we have nothing in the cookie so just add our item
           document.cookie = "cart=" + JSON.stringify({Product1: num.innerHTML}) + "; path=/";
         } else {
           // we need to load the cookie from a string to dictionary
-          console.log('This is coming');
           let obj = JSON.parse(c);
-
           let found = false;
-
           // look through all the items in the bag
           // if we find our current item add to the count
           for (const [key, value] of Object.entries(obj)) {
-            console.log(key, value);
             if (key == 'Product1') {
               let total = parseInt(value) + parseInt(num.innerHTML);
-               
               if (total > 9) {
                 total = 9;
               };
-
               obj['Product1'] = total;
-
               found = true;
             };
           };
-
           if (!found) {
             obj['Product1'] = num.innerHTML;
           };
-
           document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
         };
-        
-        
       });
     </script>
     <script src="../../js/cartscript.js"></script>
