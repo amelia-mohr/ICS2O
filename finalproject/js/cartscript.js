@@ -8,6 +8,12 @@ titleToPrice['puppy1'] = 8.00;
 titleToPrice['puppy2'] = 10.00;
 titleToPrice['puppy3'] = 12.00;
 
+// title to image
+var titleToImage = {};
+titleToPrice['puppy1'] = "puppic1.jpg";
+titleToPrice['puppy2'] = "puppic2.jpg";
+titleToPrice['puppy3'] = "puppic3.jpg";
+
 function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
@@ -48,7 +54,7 @@ btnCart.addEventListener('click', () => {
         // look through all the items in the bag and add them to the panel
         for (const [key, value] of Object.entries(obj)) {
             console.log(key, value);
-            let newProductElement = createCartProduct(key,value,titleToPrice);
+            let newProductElement = createCartProduct(key,value,titleToPrice,titleToImage);
             let element = document.createElement('div');
             element.innerHTML = newProductElement;
             cartBasket.append(element);
@@ -84,12 +90,12 @@ function removeItem(){
 };
 
 //Add Cart
-function createCartProduct(title,qty,titleToPrice){
+function createCartProduct(title,qty,titleToPrice,titleToImage){
     // lookup price in map
     let overallPrice = titleToPrice[title] * parseInt(qty);
 
     // lookup image in map
-    let image = "puppic1.jpg";
+    let image = titleToImage[title];
     
     return `
     <div class="cart-box">
