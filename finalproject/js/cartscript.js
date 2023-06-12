@@ -30,6 +30,32 @@ function getCookie(cname) {
     return null;
 }
 
+function removeLogic(title) {
+    //let product = this.parentElement.querySelector('#box-title').innerText;
+    //console.log(product);
+    let c = getCookie("cart");
+    if (c == null) {
+        // we have nothing in the cookie 
+    } else {
+        // we need to load the cookie from a string to dictionary
+        let obj = JSON.parse(c);
+        let found = false;
+        // look through all the items in the bag
+        // if we find our current item delete
+        for (const [key, value] of Object.entries(obj)) {
+            if (key == title) {
+                console.log("FOUND!!!");
+                found = true;
+            };
+        };
+        if (!found) {
+            console.log("NOT FOUND!!!");
+        };
+        //document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
+    };
+    this.parentElement.remove();
+}
+
 btnCart.addEventListener('click', () => {
     cart.classList.add('cart-active');
     console.log('bag page loaded');
@@ -53,31 +79,9 @@ btnCart.addEventListener('click', () => {
 
             // now add the appropriate delete function
             const btnRemove = document.getElementById('remove-' + key);
-            btnRemove.addEventListener('click', (title) => {
-                //let product = this.parentElement.querySelector('#box-title').innerText;
-                //console.log(product);
-                let c = getCookie("cart");
-                if (c == null) {
-                    // we have nothing in the cookie 
-                } else {
-                    // we need to load the cookie from a string to dictionary
-                    let obj = JSON.parse(c);
-                    let found = false;
-                    // look through all the items in the bag
-                    // if we find our current item delete
-                    for (const [key, value] of Object.entries(obj)) {
-                        if (key == title) {
-                            console.log("FOUND!!!");
-                            found = true;
-                        };
-                    };
-                    if (!found) {
-                        console.log("NOT FOUND!!!");
-                    };
-                    //document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
-                };
-                this.parentElement.remove();
-            })(key);
+            btnRemove.addEventListener('click', () => {
+                removeLogic(key);
+            });
         };
     };
 });
