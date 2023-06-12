@@ -30,12 +30,13 @@ function getCookie(cname) {
     return null;
 }
 
-btnCart.addEventListener('click', () => {
+btnCart.addEventListener('click', openCart());
+
+function openCart(){
     cart.classList.add('cart-active');
     console.log('bag page loaded');
     const cartBasket = document.getElementById("cart-content");
     cartBasket.innerHTML = '';
-
     console.log('Cookie content');
     console.log(decodeURIComponent(document.cookie));
     let c = getCookie("cart");
@@ -53,7 +54,7 @@ btnCart.addEventListener('click', () => {
         
         }    
     };
-});
+};
 
 btnClose.addEventListener('click', () => {
     cart.classList.remove('cart-active');
