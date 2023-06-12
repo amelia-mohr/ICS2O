@@ -4,15 +4,15 @@ const btnClose = document.querySelector('#cart-close');
 
 // title to price
 var titleToPrice = {};
-titleToPrice['puppy1'] = 8.00;
-titleToPrice['puppy2'] = 10.00;
-titleToPrice['puppy3'] = 12.00;
+titleToPrice['Product1'] = 8.00;
+titleToPrice['Product2'] = 10.00;
+titleToPrice['Product3'] = 12.00;
 
 // title to image
 var titleToImage = {};
-titleToImage['puppy1'] = "puppic1.jpg";
-titleToImage['puppy2'] = "puppic2.jpg";
-titleToImage['puppy3'] = "puppic3.jpg";
+titleToImage['Product1'] = "puppic1.jpg";
+titleToImage['Product2'] = "puppic2.jpg";
+titleToImage['Product3'] = "puppic3.jpg";
 
 function getCookie(cname) {
     let name = cname + "=";
@@ -33,15 +33,8 @@ function getCookie(cname) {
 btnCart.addEventListener('click', () => {
     cart.classList.add('cart-active');
     console.log('bag page loaded');
-    //need to pull quantity and pup number here
-
-
-   
     const cartBasket = document.getElementById("cart-content");
     cartBasket.innerHTML = '';
-
-    
-
 
     console.log('Cookie content');
     console.log(decodeURIComponent(document.cookie));
