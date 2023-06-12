@@ -50,6 +50,34 @@ btnCart.addEventListener('click', () => {
             let element = document.createElement('div');
             element.innerHTML = newProductElement;
             cartBasket.append(element);
+
+            // now add the appropriate delete function
+            const btnRemove = document.getElementById('remove-' + key);
+            btnRemove.addEventListener('click', () => {
+                let product = this.parentElement.querySelector('#box-title').innerText;
+                console.log(product);
+                let c = getCookie("cart");
+                if (c == null) {
+                    // we have nothing in the cookie
+                } else {
+                    // we need to load the cookie from a string to dictionary
+                    let obj = JSON.parse(c);
+                    let found = false;
+                    // look through all the items in the bag
+                    // if we find our current item delete
+                    for (const [key, value] of Object.entries(obj)) {
+                        if (key == product) {
+                            console.log("FOUND!!!");
+                            found = true;
+                        };
+                    };
+                    if (!found) {
+                        console.log("NOT FOUND!!!");
+                    };
+                    //document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
+                };
+                this.parentElement.remove();
+            });
         };
     };
 });
@@ -59,32 +87,7 @@ btnClose.addEventListener('click', () => {
 });
 
 //Remove Items From Cart
-const btnRemove = document.getElementById('remove');
-btnRemove.addEventListener('click', () => {
-    let product = this.parentElement.querySelector('#box-title').innerText;
-    console.log(product);
-    let c = getCookie("cart");
-    if (c == null) {
-        // we have nothing in the cookie
-    } else {
-        // we need to load the cookie from a string to dictionary
-        let obj = JSON.parse(c);
-        let found = false;
-        // look through all the items in the bag
-        // if we find our current item delete
-        for (const [key, value] of Object.entries(obj)) {
-            if (key == product) {
-                console.log("FOUND!!!");
-                found = true;
-            };
-        };
-        if (!found) {
-            console.log("NOT FOUND!!!");
-        };
-        //document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
-    };
-    this.parentElement.remove();
-});
+
 
 //Add Cart
 function createCartProduct(title,qty,titleToPrice,titleToImage){
@@ -105,7 +108,7 @@ function createCartProduct(title,qty,titleToPrice,titleToImage){
         </div>
         <p>Quantity: <span class="product-quant">${qty}</span></p>
       </div>
-      <span id="remove" class="remove material-symbols-rounded">delete</span>
+      <span id="remove-${title}" class="remove material-symbols-rounded">delete</span>
     </div>
     `;
 };
