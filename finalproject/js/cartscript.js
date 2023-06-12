@@ -31,7 +31,7 @@ btnCart.addEventListener('click', () => {
     
 
 
-
+    console.log('Cookie content');
     console.log(decodeURIComponent(document.cookie));
     let c = getCookie("cart");
     if (c == null) {
