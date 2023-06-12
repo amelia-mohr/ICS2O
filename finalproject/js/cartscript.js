@@ -53,7 +53,9 @@ function removeLogic(title) {
         };
         //document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
     };
-    this.parentElement.remove();
+
+    let itemDiv = document.getElementById("item-" + title);
+    itemDiv.parentElement.remove();
 }
 
 btnCart.addEventListener('click', () => {
@@ -102,7 +104,7 @@ function createCartProduct(title,qty,titleToPrice,titleToImage){
     let image = titleToImage[title];
     
     return `
-    <div class="cart-box">
+    <div id="item-${title}" class="cart-box">
       <img src="/images/${image}" class="cart-img">
       <div class="detail-box">
         <h3 id="box-title">${title}</h3>
