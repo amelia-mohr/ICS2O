@@ -59,27 +59,34 @@ btnClose.addEventListener('click', () => {
     cart.classList.remove('cart-active');
 });
 
-document.addEventListener('DOMContentLoaded',loadProducts);
-
-function loadProducts(){
-    loadContent();
-};
-
-function loadContent(){
-    //Remove Items From Cart
-    let btnRemove = document.querySelectorAll('.remove');
-    btnRemove.forEach((btn) => {
-        btn.addEventListener('click', removeItem);
+//Remove Items From Cart
+const btnRemove = document.querySelector('.remove');
+btnRemove.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        let product = this.parentElement.querySelector('#box-title').innerText;
+        let c = getCookie("cart");
+        if (c == null) {
+            // we have nothing in the cookie
+        } else {
+            // we need to load the cookie from a string to dictionary
+            let obj = JSON.parse(c);
+            let found = false;
+            // look through all the items in the bag
+            // if we find our current item delete
+            for (const [key, value] of Object.entries(obj)) {
+                if (key == product) {
+                    console.log("FOUND!!!");
+                    found = true;
+                };
+            };
+            if (!found) {
+                console.log("NOT FOUND!!!");
+            };
+            //document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
+        };
+        this.parentElement.remove();
     });
-    //Add to Cart
-    // btnAddBag1 = document.querySelectorAll('#add-bag-1.add-btn');
-    //btnAddBag1.addEventListener('click', addBag1);
-};
-
-// Remove Item
-function removeItem(){
-    this.parentElement.remove();
-};
+});
 
 //Add Cart
 function createCartProduct(title,qty,titleToPrice,titleToImage){
@@ -93,7 +100,7 @@ function createCartProduct(title,qty,titleToPrice,titleToImage){
     <div class="cart-box">
       <img src="/ICS2O/finalproject/images/${image}" class="cart-img">
       <div class="detail-box">
-        <h3>${title}</h3>
+        <h3 id="box-title">${title}</h3>
         <div class="price-box">
           <p>Price:</p>
           <h4>$${overallPrice}</h4>
