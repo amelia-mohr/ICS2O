@@ -64,6 +64,7 @@ const btnRemove = document.querySelector('.remove');
 btnRemove.forEach((btn) => {
     btn.addEventListener('click', () => {
         let product = this.parentElement.querySelector('#box-title').innerText;
+        console.log(product);
         let c = getCookie("cart");
         if (c == null) {
             // we have nothing in the cookie
