@@ -53,9 +53,9 @@ btnCart.addEventListener('click', () => {
 
             // now add the appropriate delete function
             const btnRemove = document.getElementById('remove-' + key);
-            btnRemove.addEventListener('click', () => {
-                let product = this.parentElement.querySelector('#box-title').innerText;
-                console.log(product);
+            btnRemove.addEventListener('click', (title) => {
+                //let product = this.parentElement.querySelector('#box-title').innerText;
+                //console.log(product);
                 let c = getCookie("cart");
                 if (c == null) {
                     // we have nothing in the cookie 
@@ -66,7 +66,7 @@ btnCart.addEventListener('click', () => {
                     // look through all the items in the bag
                     // if we find our current item delete
                     for (const [key, value] of Object.entries(obj)) {
-                        if (key == product) {
+                        if (key == title) {
                             console.log("FOUND!!!");
                             found = true;
                         };
@@ -77,7 +77,7 @@ btnCart.addEventListener('click', () => {
                     //document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
                 };
                 this.parentElement.remove();
-            });
+            })(key);
         };
     };
 });
