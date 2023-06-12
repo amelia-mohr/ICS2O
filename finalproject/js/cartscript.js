@@ -10,9 +10,9 @@ titleToPrice['puppy3'] = 12.00;
 
 // title to image
 var titleToImage = {};
-titleToPrice['puppy1'] = "puppic1.jpg";
-titleToPrice['puppy2'] = "puppic2.jpg";
-titleToPrice['puppy3'] = "puppic3.jpg";
+titleToImage['puppy1'] = "puppic1.jpg";
+titleToImage['puppy2'] = "puppic2.jpg";
+titleToImage['puppy3'] = "puppic3.jpg";
 
 function getCookie(cname) {
     let name = cname + "=";
