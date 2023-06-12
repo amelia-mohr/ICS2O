@@ -23,10 +23,15 @@ btnCart.addEventListener('click', () => {
     console.log('bag page loaded');
     //need to pull quantity and pup number here
 
+
+   
     let newProductElement = createCartProduct();
     let element = document.createElement('div');
     element.innerHTML = newProductElement;
     const cartBasket = document.querySelector("#cart-content");
+
+    cartBasket.innerHTML = '';
+
     cartBasket.append(element);
 
 
