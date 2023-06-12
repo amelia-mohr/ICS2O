@@ -30,21 +30,19 @@ function getCookie(cname) {
     return null;
 }
 
+// delete item & cookie
 function removeLogic(title) {
-    //let product = this.parentElement.querySelector('#box-title').innerText;
-    //console.log(product);
     let c = getCookie("cart");
     if (c == null) {
-        // we have nothing in the cookie 
+        // nothing in the cookie 
     } else {
-        // we need to load the cookie from a string to dictionary
+        // load the cookie from a string to dictionary
         let obj = JSON.parse(c);
         let found = false;
         // look through all the items in the bag
-        // if we find our current item delete
-        for (const [key, value] of Object.entries(obj)) {
+        // if find our current item -> delete
+        for (const [key] of Object.entries(obj)) {
             if (key == title) {
-                console.log("FOUND!!!");
                 delete obj[key];
                 found = true;
             };
@@ -54,33 +52,26 @@ function removeLogic(title) {
         };
         document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
     };
-
     let itemDiv = document.getElementById("item-" + title);
     itemDiv.parentElement.remove();
 }
 
 btnCart.addEventListener('click', () => {
     cart.classList.add('cart-active');
-    console.log('bag page loaded');
     const cartBasket = document.getElementById("cart-content");
     cartBasket.innerHTML = '';
-
-    console.log('Cookie content');
-    console.log(decodeURIComponent(document.cookie));
     let c = getCookie("cart");
     if (c == null) {
-        // we have nothing in the cookie so just add our item
+        // nothing in the cookie, cart is empty
     } else {
         let obj = JSON.parse(c);
         // look through all the items in the bag and add them to the panel
         for (const [key, value] of Object.entries(obj)) {
-            console.log(key, value);
             let newProductElement = createCartProduct(key,value,titleToPrice,titleToImage);
             let element = document.createElement('div');
             element.innerHTML = newProductElement;
             cartBasket.append(element);
-
-            // now add the appropriate delete function
+            // delete function
             const btnRemove = document.getElementById('remove-' + key);
             btnRemove.addEventListener('click', () => {
                 removeLogic(key);
@@ -93,15 +84,12 @@ btnClose.addEventListener('click', () => {
     cart.classList.remove('cart-active');
 });
 
-//Remove Items From Cart
-
-
-//Add Cart
+// add cart
 function createCartProduct(title,qty,titleToPrice,titleToImage){
-    // lookup price in map
+    // lookup price
     let overallPrice = titleToPrice[title] * parseInt(qty);
 
-    // lookup image in map
+    // lookup image
     let image = titleToImage[title];
     
     return `
