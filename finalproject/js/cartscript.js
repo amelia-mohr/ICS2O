@@ -25,7 +25,7 @@ btnCart.addEventListener('click', () => {
 
 
    
-    const cartBasket = document.querySelector("#cart-content");
+    const cartBasket = document.getElementById("cart-content");
     cartBasket.innerHTML = '';
 
     
