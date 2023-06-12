@@ -254,7 +254,7 @@
 
         if (c == null) {
           // we have nothing in the cookie so just add our item
-          document.cookie = "cart=" + JSON.stringify({puppy1: num.innerHTML} + ";path=/");
+          document.cookie = "cart=" + JSON.stringify({puppy1: num.innerHTML} + "; path=/");
         } else {
           // we need to load the cookie from a string to dictionary
           console.log('This is coming');
@@ -283,7 +283,7 @@
             obj['puppy1'] = num.innerHTML;
           };
 
-          document.cookie = "cart=" + JSON.stringify(obj) + ";path=/";     
+          document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
         };
         
         
