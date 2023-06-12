@@ -91,7 +91,7 @@ function createCartProduct(title,qty,titleToPrice,titleToImage){
     
     return `
     <div class="cart-box">
-      <img src="/finalproject/images/${image}" class="cart-img">
+      <img src="/ICS2O/finalproject/images/${image}" class="cart-img">
       <div class="detail-box">
         <h3>${title}</h3>
         <div class="price-box">
