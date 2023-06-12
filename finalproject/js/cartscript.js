@@ -89,7 +89,6 @@ function createCartProduct(title,qty,titleToPrice,titleToImage){
     // lookup price
     let overallPrice = titleToPrice[title] * parseInt(qty);
     let price = overallPrice.toFixed(2)
-    console.log(price);
 
     // lookup image
     let image = titleToImage[title];
