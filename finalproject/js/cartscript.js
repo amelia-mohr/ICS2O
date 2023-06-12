@@ -58,7 +58,7 @@ btnCart.addEventListener('click', () => {
                 console.log(product);
                 let c = getCookie("cart");
                 if (c == null) {
-                    // we have nothing in the cookie
+                    // we have nothing in the cookie 
                 } else {
                     // we need to load the cookie from a string to dictionary
                     let obj = JSON.parse(c);
