@@ -42,7 +42,7 @@ btnCart.addEventListener('click', () => {
         // look through all the items in the bag and add them to the panel
         for (const [key, value] of Object.entries(obj)) {
             console.log(key, value);
-            let newProductElement = createCartProduct();
+            let newProductElement = createCartProduct(key,value);
             let element = document.createElement('div');
             element.innerHTML = newProductElement;
             cartBasket.append(element);
@@ -78,17 +78,23 @@ function removeItem(){
 };
 
 //Add Cart
-function createCartProduct(){
+function createCartProduct(title,qty){
+    // lookup price in map
+    let overallPrice = 8.00 * parseInt(qty);
+
+    // lookup image in map
+    let image = "puppic1.jpg";
+    
     return `
     <div class="cart-box">
-      <img src="/images/puppic1.jpg" class="cart-img">
+      <img src="/images/${image}" class="cart-img">
       <div class="detail-box">
-        <h3>Product 1</h3>
+        <h3>${title}</h3>
         <div class="price-box">
           <p>Price:</p>
-          <h4>$8.00</h4>
+          <h4>$${overallPrice}</h4>
         </div>
-        <p>Quantity: <span class="product-quant">1</span></p>
+        <p>Quantity: <span class="product-quant">${qty}</span></p>
       </div>
       <span class="remove material-symbols-rounded">delete</span>
     </div>
