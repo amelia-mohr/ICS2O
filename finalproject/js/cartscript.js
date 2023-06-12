@@ -60,7 +60,7 @@ btnClose.addEventListener('click', () => {
 });
 
 //Remove Items From Cart
-const btnRemove = document.querySelector('.remove');
+const btnRemove = document.getElementsByClassName('remove');
 btnRemove.forEach((btn) => {
     btn.addEventListener('click', () => {
         let product = this.parentElement.querySelector('#box-title').innerText;
