@@ -105,5 +105,3 @@ function createCartProduct(title,qty,titleToPrice,titleToImage){
     </div>
     `;
 };
-
-//title,imgSrc,price,qty
