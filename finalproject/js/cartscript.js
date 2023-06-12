@@ -81,7 +81,7 @@ function removeItem(){
 function createCartProduct(){
     return `
     <div class="cart-box">
-      <img src="../images/puppic1.jpg" class="cart-img">
+      <img src="/images/puppic1.jpg" class="cart-img">
       <div class="detail-box">
         <h3>Product 1</h3>
         <div class="price-box">
