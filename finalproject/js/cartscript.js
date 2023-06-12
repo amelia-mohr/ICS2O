@@ -45,13 +45,14 @@ function removeLogic(title) {
         for (const [key, value] of Object.entries(obj)) {
             if (key == title) {
                 console.log("FOUND!!!");
+                delete obj[key];
                 found = true;
             };
         };
         if (!found) {
             console.log("NOT FOUND!!!");
         };
-        //document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
+        document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
     };
 
     let itemDiv = document.getElementById("item-" + title);
