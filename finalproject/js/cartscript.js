@@ -43,7 +43,6 @@ btnCart.addEventListener('click', () => {
         // we have nothing in the cookie so just add our item
     } else {
         let obj = JSON.parse(c);
-        let found = false;
         // look through all the items in the bag and add them to the panel
         for (const [key, value] of Object.entries(obj)) {
             console.log(key, value);
