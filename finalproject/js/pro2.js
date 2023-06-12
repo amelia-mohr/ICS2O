@@ -52,14 +52,14 @@ var btnAddBag2 = document.getElementById('add-bag-2');
 btnAddBag2.addEventListener('click', () => {
     let c = getCookie("cart");
     if (c == null) {
-        // we have nothing in the cookie so just add our item
+        // nothing in the cookie, just add our item
         document.cookie = "cart=" + JSON.stringify({Product2: num.innerHTML}) + "; path=/";
     } else {
-        // we need to load the cookie from a string to dictionary
+        // load the cookie from a string to dictionary
         let obj = JSON.parse(c);
         let found = false;
         // look through all the items in the bag
-        // if we find our current item add to the count
+        // if find current item -> add to the count
         for (const [key, value] of Object.entries(obj)) {
             if (key == 'Product2') {
                 let total = parseInt(value) + parseInt(num.innerHTML);
