@@ -25,33 +25,30 @@ btnCart.addEventListener('click', () => {
 
 
    
-    let newProductElement = createCartProduct();
-    let element = document.createElement('div');
-    element.innerHTML = newProductElement;
     const cartBasket = document.querySelector("#cart-content");
-
     cartBasket.innerHTML = '';
 
-    cartBasket.append(element);
+    
 
 
 
-    //console.log(decodeURIComponent(document.cookie));
-    //let c = getCookie("cart");
-    //if (c == null) {
+    console.log(decodeURIComponent(document.cookie));
+    let c = getCookie("cart");
+    if (c == null) {
         // we have nothing in the cookie so just add our item
-    //} else {
-    //    let obj = JSON.parse(c);
-    //    let found = false;
+    } else {
+        let obj = JSON.parse(c);
+        let found = false;
         // look through all the items in the bag and add them to the panel
-    //    for (const [key, value] of Object.entries(obj)) {
-    //        console.log(key, value);
-    //    };
-    //    if (!found) {
-    //        obj['puppy1'] = num.innerHTML;
-    //    };
-    //    document.cookie = "cart=" + JSON.stringify(obj);     
-    //};
+        for (const [key, value] of Object.entries(obj)) {
+            console.log(key, value);
+            let newProductElement = createCartProduct();
+            let element = document.createElement('div');
+            element.innerHTML = newProductElement;
+            cartBasket.append(element);
+        
+        }    
+    };
 });
 
 btnClose.addEventListener('click', () => {
