@@ -254,7 +254,7 @@
 
         if (c == null) {
           // we have nothing in the cookie so just add our item
-          document.cookie = "cart=" + JSON.stringify({puppy3: num.innerHTML}) + "; path=/";
+          document.cookie = "cart=" + JSON.stringify({Product3: num.innerHTML}) + "; path=/";
         } else {
           // we need to load the cookie from a string to dictionary
           let obj = JSON.parse(c);
@@ -265,21 +265,21 @@
           // if we find our current item add to the count
           for (const [key, value] of Object.entries(obj)) {
             console.log(key, value);
-            if (key == 'puppy3') {
+            if (key == 'Product3') {
               let total = parseInt(value) + parseInt(num.innerHTML);
                
               if (total > 9) {
                 total = 9;
               };
 
-              obj['puppy3'] = total;
+              obj['Product3'] = total;
 
               found = true;
             };
           };
 
           if (!found) {
-            obj['puppy3'] = num.innerHTML;
+            obj['Product3'] = num.innerHTML;
           };
 
           document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
