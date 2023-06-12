@@ -30,13 +30,12 @@ function getCookie(cname) {
     return null;
 }
 
-btnCart.addEventListener('click', openCart());
-
-function openCart(){
+btnCart.addEventListener('click', () => {
     cart.classList.add('cart-active');
     console.log('bag page loaded');
     const cartBasket = document.getElementById("cart-content");
     cartBasket.innerHTML = '';
+
     console.log('Cookie content');
     console.log(decodeURIComponent(document.cookie));
     let c = getCookie("cart");
@@ -51,43 +50,40 @@ function openCart(){
             let element = document.createElement('div');
             element.innerHTML = newProductElement;
             cartBasket.append(element);
-        
-        }    
+        };
     };
-};
+});
 
 btnClose.addEventListener('click', () => {
     cart.classList.remove('cart-active');
 });
 
 //Remove Items From Cart
-const btnRemove = document.getElementsByClassName('remove');
-btnRemove.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        let product = this.parentElement.querySelector('#box-title').innerText;
-        console.log(product);
-        let c = getCookie("cart");
-        if (c == null) {
-            // we have nothing in the cookie
-        } else {
-            // we need to load the cookie from a string to dictionary
-            let obj = JSON.parse(c);
-            let found = false;
-            // look through all the items in the bag
-            // if we find our current item delete
-            for (const [key, value] of Object.entries(obj)) {
-                if (key == product) {
-                    console.log("FOUND!!!");
-                    found = true;
-                };
+const btnRemove = document.getElementById('remove');
+btnRemove.addEventListener('click', () => {
+    let product = this.parentElement.querySelector('#box-title').innerText;
+    console.log(product);
+    let c = getCookie("cart");
+    if (c == null) {
+        // we have nothing in the cookie
+    } else {
+        // we need to load the cookie from a string to dictionary
+        let obj = JSON.parse(c);
+        let found = false;
+        // look through all the items in the bag
+        // if we find our current item delete
+        for (const [key, value] of Object.entries(obj)) {
+            if (key == product) {
+                console.log("FOUND!!!");
+                found = true;
             };
-            if (!found) {
-                console.log("NOT FOUND!!!");
-            };
-            //document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
         };
-        this.parentElement.remove();
-    });
+        if (!found) {
+            console.log("NOT FOUND!!!");
+        };
+        //document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
+    };
+    this.parentElement.remove();
 });
 
 //Add Cart
