@@ -65,8 +65,10 @@ btnCart.addEventListener('click', () => {
         // nothing in the cookie, cart is empty
     } else {
         let obj = JSON.parse(c);
+        let counter = 0;
         // look through all the items in the bag and add them to the panel
         for (const [key, value] of Object.entries(obj)) {
+            counter++;
             let newProductElement = createCartProduct(key,value,titleToPrice,titleToImage);
             let element = document.createElement('div');
             element.innerHTML = newProductElement;
@@ -77,6 +79,7 @@ btnCart.addEventListener('click', () => {
                 removeLogic(key);
             });
         };
+        console.log(counter);
     };
 });
 
