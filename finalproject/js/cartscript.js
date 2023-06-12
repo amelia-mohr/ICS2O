@@ -88,10 +88,11 @@ btnClose.addEventListener('click', () => {
 function createCartProduct(title,qty,titleToPrice,titleToImage){
     // lookup price
     let overallPrice = titleToPrice[title] * parseInt(qty);
+    let price = overallPrice.toFixed(2)
 
     // lookup image
     let image = titleToImage[title];
-    
+
     return `
     <div id="item-${title}" class="cart-box">
       <img src="/images/${image}" class="cart-img">
@@ -99,7 +100,7 @@ function createCartProduct(title,qty,titleToPrice,titleToImage){
         <h3 id="box-title">${title}</h3>
         <div class="price-box">
           <p>Price:</p>
-          <h4>$${overallPrice}</h4>
+          <h4>$${price}</h4>
         </div>
         <p>Quantity: <span class="product-quant">${qty}</span></p>
       </div>
