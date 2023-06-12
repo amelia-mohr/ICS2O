@@ -105,7 +105,7 @@ function createCartProduct(title,qty,titleToPrice,titleToImage){
         </div>
         <p>Quantity: <span class="product-quant">${qty}</span></p>
       </div>
-      <span class="remove material-symbols-rounded">delete</span>
+      <span id="remove" class="remove material-symbols-rounded">delete</span>
     </div>
     `;
 };
