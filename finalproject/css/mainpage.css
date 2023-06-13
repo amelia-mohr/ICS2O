@@ -158,6 +158,21 @@ nav img{
 .total h2{
   margin: 5px 0;
 }
+.name{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.name p{
+  text-align: center;
+  font-size: 14px;
+}
+.name-flex{
+  display: flex;
+  justify-content: space-around;
+}
+.name-flex input{
+  
+}
 .buy-btn{
   background-image: linear-gradient(rgb(4 9 30 / 40%),rgb(4 9 30 / 40%)),url('../images/background2.webp');
   display: block;
