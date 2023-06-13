@@ -108,3 +108,25 @@ function createCartProduct(title,qty,titleToPrice,titleToImage){
     </div>
     `;
 };
+
+document.addEventListener('DOMContentLoaded', loadPage);
+
+function loadPage(){
+    countItems();
+};
+
+function countItems(){
+    let count = 0;
+    let c = getCookie("cart");
+    if (c == null) {
+        // nothing in the cookie, cart is empty
+    } else {
+        let obj = JSON.parse(c);
+        // look through all the items in the bag and add to count
+        for (const [key, value] of Object.entries(obj)) {
+            count++;
+            console.log(count);
+        };
+    };
+};
+
