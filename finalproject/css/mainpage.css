@@ -66,8 +66,9 @@ nav img{
   position: absolute;
   color: #fff;
   top: 0;
-  right: 0;
-  margin-right: 43.6%;
+  text-align: center;
+  min-width: 18px;
+  margin-left: 11%;
   margin-top: 33%;
   font-size: 11px;
   cursor: pointer;
