@@ -134,13 +134,3 @@ function countItems(){
     };
 };
 
-//prevent user from submiting order if name input is not filled
-const orderBtn = document.querySelector('#buy-btn');
-orderBtn.addEventListener('click', (event) => {
-    let fName = document.getElementById("fname");
-    let lName = document.getElementById("lname");
-    if ((fName == null || fName == "") || (lName == null || lName == "")) {
-        event.preventDefault();
-        alert("Please enter your first AND last name.");
-    };
-});
