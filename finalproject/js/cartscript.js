@@ -116,7 +116,7 @@ function loadPage(){
 };
 
 function countItems(){
-    let count = 0;
+    let count = document.getElementById("items");
     let c = getCookie("cart");
     if (c == null) {
         // nothing in the cookie, cart is empty
@@ -124,7 +124,7 @@ function countItems(){
         let obj = JSON.parse(c);
         // look through all the items in the bag and add to count
         for (const [key, value] of Object.entries(obj)) {
-            count++;
+            count.innerHTML++;
         };
     };
     console.log("Cart count: " + count);
