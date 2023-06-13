@@ -54,6 +54,7 @@ function removeLogic(title) {
     };
     let itemDiv = document.getElementById("item-" + title);
     itemDiv.parentElement.remove();
+    countItems();
 }
 
 btnCart.addEventListener('click', () => {
@@ -127,6 +128,5 @@ function countItems(){
             count.innerHTML++;
         };
     };
-    console.log("Cart count: " + count);
 };
 
