@@ -56,6 +56,11 @@ nav img{
 .nav-links ul li:hover::after{
   width: 100%;
 }
+.nav-links ul li.active::after{
+  width: 70%;
+  left: 0;
+  margin: 0;
+}
 .numofitems{
   position: absolute;
   color: #fff;
@@ -152,6 +157,38 @@ nav img{
 .total h2{
   margin: 5px 0;
 }
+.name{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.name h2{
+  font-size: 40px;
+  margin: 10px 0 40px;
+}
+.name-flex{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.name-flex input{
+  max-width: 45%;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius: 4px;
+}
+.name-flex input:focus-visible{
+  outline: none;
+  border: 2px solid #606060;
+}
 .buy-btn{
   background-image: linear-gradient(rgb(4 9 30 / 40%),rgb(4 9 30 / 40%)),url('../images/background2.webp');
   display: block;
@@ -183,8 +220,8 @@ nav img{
   margin-top: 5%;
   margin-right: 5%;
 }
-.sig-pro-info{
-  margin-top: 80px;
+.featured{
+  margin: 70px 0;
 }
 .small-container{
   max-width: 1080px;
@@ -192,171 +229,8 @@ nav img{
   padding-left: 25px;
   padding-right: 25px;
 }
-.backlink{
-  font-size: 13px;
-  color: #555;
-}
-.backlink a{
-  font-size: 13px;
-  color: #555;
-  text-decoration: none;
-  transition: 0.5s;
-}
-.backlink a:hover{
-  text-decoration: underline;
-}
-.row-2{
-  display: flex;
-  align-items: start;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.col-2{
-  flex-basis: 45%;
-  min-width: 300px;
-  padding: 20px;
-}
-.col-2 img{
-  padding: 0;
-  border-radius: 6px;
-  box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%);
-  margin-bottom: 18px;
-}
-.quantity-row{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: left;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  max-width: fit-content;
-  margin-right: 5%;
-}
-.plus{
-  color: #8a8a8a;
-  transform: translateY(1px);
-  margin-right: 4px;
-  cursor: pointer;
-  border-radius: 2px;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.plus:hover{
-  color: #3b3b3b;
-}
-.minus{
-  color: #8a8a8a;
-  transform: translateY(1px);
-  margin-left: 2px;
-  cursor: pointer;
-  border-radius: 2px;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.minus:hover{
-  color: #3b3b3b;
-}
-.quantity{
-  padding: 0 15px;
-}
-.add-btn{
-  text-decoration: none;
-  color: #fff;
-  border-radius: 32px;
-  background: rgba(30, 63, 22, 0.725);
-  display: inline-block;
-  padding: 12px 34px;
-  font-size: 13px;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.add-btn:hover{
-  background: #c5f133;
-  color: #000;
-}
-.other{
-  border-top: 1px solid #eee;
-  padding-top: 5%;
-  display: flex;
-}
-.col-2 form h1{
-  font-size: 40px;
-}
-.col-2 p{
-  color: #555;
-  font-size: 16px;
-}
-.col-2 h3{
-  color: #555;
-  border-top: 1px solid #eee;
-  padding-top: 5%;
-}
-.price-row{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: left;
-  border-top: 1px solid #eee;
-  padding-top: 5%;
-  margin: 20px 0;
-}
-.price-col{
-  flex-basis: 10%;
-}
-.price-col h4{
-  font-size: 22px;
-  font-weight: bold;
-}
-.sig-pro-info h3 span{
-  color: #555;
-  margin-left: 10px;
-  transform: translateY(5px);
-}
-.col-2 .small-img-row{
-  display: flex;
-  justify-content: space-between;
-}
-.col-2 .small-img-col{
-  flex-basis: 30%;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-.col-2 .small-img-col img{
-  box-shadow: none;
-  margin-bottom: 0;
-  border-radius: 6px;
-  width: 100%;
-  display: block;
-}
-.layer{
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  border-radius: 6px;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-}
-.layer:hover{
-  background: rgba(30, 63, 22, 0.538);
-}
-.layer p{
-  color: transparent;
-  text-align: center;
-}
-.featured{
-  margin: 70px 0;
-}
 .title{
-  text-align: center;
+  text-align: left;
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
@@ -370,8 +244,7 @@ nav img{
   border-radius: 5px;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
 }
 .row{
   display: flex;
@@ -401,7 +274,7 @@ nav img{
   border-radius: 6px;
 }
 .col-3 a h4, .col-3 a p{
-    color: #555;
+  color: #555;
 }
 .col-3 a p{
   font-size: 14px;
