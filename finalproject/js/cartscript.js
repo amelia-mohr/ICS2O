@@ -57,6 +57,7 @@ function removeLogic(title) {
     countItems();
 }
 
+//open cart
 btnCart.addEventListener('click', () => {
     cart.classList.add('cart-active');
     const cartBasket = document.getElementById("cart-content");
@@ -81,6 +82,7 @@ btnCart.addEventListener('click', () => {
     };
 });
 
+//close cart
 btnClose.addEventListener('click', () => {
     cart.classList.remove('cart-active');
 });
@@ -116,6 +118,7 @@ function loadPage(){
     countItems();
 };
 
+//count items
 function countItems(){
     let count = document.getElementById("items");
     count.innerHTML = 0;
@@ -131,3 +134,13 @@ function countItems(){
     };
 };
 
+//prevent user from submiting order if name input is not filled
+const orderBtn = document.querySelector('#buy-btn');
+orderBtn.addEventListener('click', (event) => {
+    let fName = document.getElementById("fname");
+    let lName = document.getElementById("lname");
+    if ((fName == null || fName == "") || (lName == null || lName == "")) {
+        event.preventDefault();
+        alert("Please enter your first AND last name.");
+    };
+});
