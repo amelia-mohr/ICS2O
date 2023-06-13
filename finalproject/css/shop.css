@@ -174,7 +174,7 @@ nav img{
   max-width: 45%;
   font-size: 15px;
   text-align: center;
-  border: 1px solid #cecece;
+  border: 1px solid #eee;
   border-radius: 4px;
 }
 .name-flex input:focus-visible{
