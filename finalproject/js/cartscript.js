@@ -125,7 +125,7 @@ function countItems(){
         // look through all the items in the bag and add to count
         for (const [key, value] of Object.entries(obj)) {
             count++;
-            console.log(count);
+            console.log("Cart count: " + count);
         };
     };
 };
