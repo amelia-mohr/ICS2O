@@ -157,6 +157,11 @@ nav img{
 .total h2{
   margin: 5px 0;
 }
+.name-form{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
 .name{
   width: 90%;
   color: #fff;
