@@ -118,6 +118,7 @@ function loadPage(){
 
 function countItems(){
     let count = document.getElementById("items");
+    count.innerHTML = 0;
     let c = getCookie("cart");
     if (c == null) {
         // nothing in the cookie, cart is empty
