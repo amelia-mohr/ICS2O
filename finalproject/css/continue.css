@@ -196,6 +196,18 @@ nav img{
 }
 .final-submit{
   margin-top: 10%;
+  display: inline-block;
+  border: 1px solid #c5f13397;
+  border-radius: 32px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.thanks-link{
+  text-decoration: none;
+  color: #c5f13397;
+  padding: 12px 34px;
+  font-size: 13px;
 }
 .remove{
   font-size: 33px;
