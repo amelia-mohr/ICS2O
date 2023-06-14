@@ -243,6 +243,12 @@ nav img{
 .col-3 a p{
   font-size: 14px;
 }
+.filler-col{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 5%;
+  padding: 1%;
+}
 .footer{
   background: #000;
   color: #8a8a8a;
