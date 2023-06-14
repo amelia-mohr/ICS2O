@@ -4,15 +4,21 @@ const btnClose = document.querySelector('#cart-close');
 
 // title to price
 var titleToPrice = {};
-titleToPrice['Product1'] = 8.00;
-titleToPrice['Product2'] = 10.00;
-titleToPrice['Product3'] = 12.00;
+titleToPrice['Product1'] = 7.00;
+titleToPrice['Product2'] = 6.00;
+titleToPrice['Product3'] = 5.00;
 
 // title to image
 var titleToImage = {};
 titleToImage['Product1'] = "puppic1.jpg";
 titleToImage['Product2'] = "puppic2.jpg";
 titleToImage['Product3'] = "puppic3.jpg";
+
+// title to product name
+var titleToProduct = {};
+titleToProduct['Product1'] = "Whale";
+titleToProduct['Product2'] = "Sunny Side Up Eggs";
+titleToProduct['Product3'] = "Bubble Tea";
 
 function getCookie(cname) {
     let name = cname + "=";
