@@ -158,13 +158,13 @@ nav img{
   margin: 5px 0;
 }
 .name-form{
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100%;
   position: relative;
 }
 .name{
   width: 90%;
-  color: #fff;
+  color: #555;
   position: absolute;
   top: 50%;
   left: 50%;
