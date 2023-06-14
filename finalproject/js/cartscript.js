@@ -68,7 +68,6 @@ function removeLogic(title) {
         };
         let itemDiv = document.getElementById("item-" + title);
         itemDiv.parentElement.remove();
-        alert("Item removed sucssefully!");
         countItems();
     };
 };
