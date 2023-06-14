@@ -95,7 +95,7 @@ btnCart.addEventListener('click', () => {
             // getting final total
             let itemPrice = titleToPrice[key] * parseInt(value);
             finalTotal += itemPrice;
-            let final = finalTotal.toFixed(2);
+            const final = finalTotal.toFixed(2);
             document.getElementById("final-total").innerHTML = final;
             console.log(final);
             // delete function
