@@ -32,7 +32,7 @@ const num = document.getElementById("num");
 const add = document.getElementById("add");
 const sub = document.getElementById("sub");
 const price = document.getElementById("price");
-const cost = 10.00;
+const cost = 6.00;
 add.onclick = function(){
     if (num.innerHTML < 9){
         num.innerHTML++;
