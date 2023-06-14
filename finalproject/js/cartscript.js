@@ -79,7 +79,7 @@ btnCart.addEventListener('click', () => {
     const cartBasket = document.getElementById("cart-content");
     cartBasket.innerHTML = '';
     let finalTotal = document.getElementById("final-total");
-    finalTotal = 0.00;
+    finalTotal.innerHTML = 0.00;
     let c = getCookie("cart");
     if (c == null) {
         // nothing in the cookie, cart is empty
