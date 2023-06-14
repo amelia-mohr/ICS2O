@@ -41,29 +41,35 @@ function getCookie(cname) {
 
 // delete item & cookie
 function removeLogic(title) {
-    let c = getCookie("cart");
-    if (c == null) {
-        // nothing in the cookie 
-    } else {
-        // load the cookie from a string to dictionary
-        let obj = JSON.parse(c);
-        let found = false;
-        // look through all the items in the bag
-        // if find our current item -> delete
-        for (const [key] of Object.entries(obj)) {
-            if (key == title) {
-                delete obj[key];
-                found = true;
+    let name = titleToProduct[title];
+    let answer = confirm("Are you sure you want to delete" + name + "?");
+    answer;
+    if (answer == true){
+        let c = getCookie("cart");
+        if (c == null) {
+            // nothing in the cookie 
+        } else {
+            // load the cookie from a string to dictionary
+            let obj = JSON.parse(c);
+            let found = false;
+            // look through all the items in the bag
+            // if find our current item -> delete
+            for (const [key] of Object.entries(obj)) {
+                if (key == title) {
+                    delete obj[key];
+                    found = true;
+                };
             };
+            if (!found) {
+                console.log("NOT FOUND!!!");
+            };
+            document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
         };
-        if (!found) {
-            console.log("NOT FOUND!!!");
-        };
-        document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
-    };
-    let itemDiv = document.getElementById("item-" + title);
-    itemDiv.parentElement.remove();
-    countItems();
+        let itemDiv = document.getElementById("item-" + title);
+        itemDiv.parentElement.remove();
+        countItems();
+        alert("Hello");
+    }
 }
 
 //open cart
