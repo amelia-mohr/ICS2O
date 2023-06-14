@@ -78,8 +78,8 @@ btnCart.addEventListener('click', () => {
     cart.classList.add('cart-active');
     const cartBasket = document.getElementById("cart-content");
     cartBasket.innerHTML = '';
-    let finalTotal = document.getElementById("final-total");
-    finalTotal.innerHTML = 0.00;
+    //let finalTotal = document.getElementById("final-total");
+   // finalTotal.innerHTML = 0.00;
     let c = getCookie("cart");
     if (c == null) {
         // nothing in the cookie, cart is empty
@@ -93,10 +93,10 @@ btnCart.addEventListener('click', () => {
             element.innerHTML = newProductElement;
             cartBasket.append(element);
             // getting final total
-            let itemPrice = titleToPrice[key] * parseInt(value);
-            finalTotal += itemPrice;
-            finalTotal.innerHTML = finalTotal.toFixed(2);
-            console.log(finalTotal);
+            //let itemPrice = titleToPrice[key] * parseInt(value);
+            //finalTotal += itemPrice;
+            //finalTotal.innerHTML = finalTotal.toFixed(2);
+            //console.log(finalTotal);
             // delete function
             const btnRemove = document.getElementById('remove-' + key);
             btnRemove.addEventListener('click', () => {
