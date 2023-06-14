@@ -42,7 +42,7 @@ function getCookie(cname) {
 // delete item & cookie
 function removeLogic(title) {
     let name = titleToProduct[title];
-    let answer = confirm("Are you sure you want to delete" + name + "?");
+    let answer = confirm("Are you sure you want to delete " + name + "?");
     answer;
     if (answer == true){
         let c = getCookie("cart");
@@ -62,15 +62,16 @@ function removeLogic(title) {
             };
             if (!found) {
                 console.log("NOT FOUND!!!");
+                alert("Unfortunately, there has been an error. Please try again.")
             };
             document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
         };
         let itemDiv = document.getElementById("item-" + title);
         itemDiv.parentElement.remove();
         countItems();
-        alert("Hello");
-    }
-}
+    };
+    alert("Item removed sucssefully!");
+};
 
 //open cart
 btnCart.addEventListener('click', () => {
