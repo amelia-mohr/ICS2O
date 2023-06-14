@@ -7,18 +7,21 @@ var titleToPrice = {};
 titleToPrice['Product1'] = 7.00;
 titleToPrice['Product2'] = 6.00;
 titleToPrice['Product3'] = 5.00;
+titleToPrice['Product4'] = 20.00;
 
 // title to image
 var titleToImage = {};
 titleToImage['Product1'] = "puppic1.jpg";
 titleToImage['Product2'] = "puppic2.jpg";
 titleToImage['Product3'] = "puppic3.jpg";
+titleToImage['Product4'] = "puppic1.jpg";
 
 // title to product name
 var titleToProduct = {};
 titleToProduct['Product1'] = "Whale";
 titleToProduct['Product2'] = "Sunny Side Up Eggs";
 titleToProduct['Product3'] = "Bubble Tea";
+titleToProduct['Product4'] = "Octopus";
 
 function getCookie(cname) {
     let name = cname + "=";
@@ -102,11 +105,14 @@ function createCartProduct(title,qty,titleToPrice,titleToImage){
     // lookup image
     let image = titleToImage[title];
 
+    // lookup name
+    let name = titleToProduct[title];
+
     return `
     <div id="item-${title}" class="cart-box">
       <img src="/images/${image}" class="cart-img">
       <div class="detail-box">
-        <h3 id="box-title">${title}</h3>
+        <h3 id="box-title">${name}</h3>
         <div class="price-box">
           <p>Price:</p>
           <h4>$${price}</h4>
