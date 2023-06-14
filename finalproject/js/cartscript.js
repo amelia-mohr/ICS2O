@@ -68,9 +68,9 @@ function removeLogic(title) {
         };
         let itemDiv = document.getElementById("item-" + title);
         itemDiv.parentElement.remove();
+        alert("Item removed sucssefully!");
         countItems();
     };
-    alert("Item removed sucssefully!");
 };
 
 //open cart
