@@ -75,4 +75,5 @@ btnAddBag4.addEventListener('click', () => {
         };
         document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
     }; 
+    alert("Item added to cart!");
 });
