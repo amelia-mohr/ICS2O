@@ -78,6 +78,8 @@ btnCart.addEventListener('click', () => {
     cart.classList.add('cart-active');
     const cartBasket = document.getElementById("cart-content");
     cartBasket.innerHTML = '';
+    let finalTotal = document.getElementById("final-total");
+    finalTotal = 0.00;
     let c = getCookie("cart");
     if (c == null) {
         // nothing in the cookie, cart is empty
@@ -85,10 +87,15 @@ btnCart.addEventListener('click', () => {
         let obj = JSON.parse(c);
         // look through all the items in the bag and add them to the panel
         for (const [key, value] of Object.entries(obj)) {
+            // adding product to cart
             let newProductElement = createCartProduct(key,value,titleToPrice,titleToImage);
             let element = document.createElement('div');
             element.innerHTML = newProductElement;
             cartBasket.append(element);
+            // getting final total
+            let itemPrice = titleToPrice[key] * parseInt(value);
+            finalTotal += itemPrice;
+            finalTotal.toFixed(2).innerHTML;
             // delete function
             const btnRemove = document.getElementById('remove-' + key);
             btnRemove.addEventListener('click', () => {
