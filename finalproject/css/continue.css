@@ -119,7 +119,7 @@ nav img{
 .cart-box{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   border-bottom: 1px solid #eee;
   padding-bottom: 5%;
   padding-top: 5%;
