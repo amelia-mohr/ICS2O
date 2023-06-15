@@ -172,9 +172,11 @@ nav img{
   transition: 0.5s;
 }
 .remove{
-  font-size: 33px;
   color: rgb(187, 0, 0);
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 5%;
 }
 #cart-close{
   position: absolute;
