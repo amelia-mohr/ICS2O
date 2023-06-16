@@ -205,6 +205,11 @@ nav img{
   font-size: 62px;
   margin: 10px 0 40px;
 }
+.message h1 img{
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 40px;
+}
 .location{
   margin: 70px 0;
 }
