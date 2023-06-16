@@ -240,6 +240,8 @@ nav img{
   flex-wrap: wrap;
   justify-content: space-around;
   color: #fff;
+  max-width: 85%;
+  margin: auto;
 }
 .col-2{
   flex-basis: 44%;
