@@ -256,6 +256,17 @@ nav img{
   font-size: 30px;
   padding-right: 5px;
 }
+.date{
+  margin: auto;
+}
+.date h4{
+  font-size: 25px;
+}
+.col-2 h4 span{
+  transform: translateY(20%);
+  font-size: 30px;
+  padding-right: 5px;
+}
 .footer{
   background: #000;
   color: #8a8a8a;
