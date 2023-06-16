@@ -262,6 +262,12 @@ nav img{
   font-size: 14px;
   padding: 60px 0 20px;
 }
+.footer-row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .footer p{
   color: #8a8a8a;
 }
