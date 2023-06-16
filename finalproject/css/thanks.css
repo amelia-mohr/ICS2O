@@ -203,9 +203,20 @@ nav img{
   font-size: 62px;
   margin: 10px 0 40px;
 }
-.featured{
+.location{
   margin: 70px 0;
 }
+.location-box{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/background2.webp');
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
 .small-container{
   max-width: 1080px;
   margin: auto;
@@ -235,32 +246,10 @@ nav img{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.col-3{
-  flex-basis: 30%;
-  min-width: 250px;
+.col-2{
+  flex-basis: 44%;
   margin-bottom: 5%;
-  border-radius: 10px;
-  box-sizing: border-box;
   padding: 1%;
-  transition: transform 0.5s;
-}
-.col-3:hover{
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-.col-3 a{
-  text-decoration: none;
-  color: #000;
-}
-.col-3 a img{
-  width: 100%;
-  border-radius: 6px;
-}
-.col-3 a h4, .col-3 a p{
-  color: #555;
-}
-.col-3 a p{
-  font-size: 14px;
 }
 .footer{
   background: #000;
