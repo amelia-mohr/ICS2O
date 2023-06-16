@@ -250,8 +250,9 @@ nav img{
   font-size: 25px;
 }
 .col-2 h4 span{
-  transform: translateY(10%);
+  transform: translateY(20%);
   font-size: 30px;
+  padding-right: 5px;
 }
 .footer{
   background: #000;
