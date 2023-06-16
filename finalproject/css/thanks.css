@@ -246,6 +246,13 @@ nav img{
   margin-bottom: 5%;
   padding: 1%;
 }
+.col-2 h4{
+  font-size: 25px;
+}
+.col-2 h4 span{
+  transform: translateY(10%);
+  font-size: 30px;
+}
 .footer{
   background: #000;
   color: #8a8a8a;
