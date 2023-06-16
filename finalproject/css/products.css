@@ -122,6 +122,7 @@ nav img{
 }
 .cart-img{
   border-radius: 6px;
+  max-width: 150px;
 }
 .detail-box{
   margin-left: 20px;
