@@ -216,13 +216,6 @@ nav img{
   text-align: center;
   padding: 100px 0;
 }
-
-.small-container{
-  max-width: 1080px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
 .title{
   text-align: left;
   margin: 0 auto 80px;
@@ -245,6 +238,7 @@ nav img{
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  color: #fff;
 }
 .col-2{
   flex-basis: 44%;
