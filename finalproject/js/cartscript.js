@@ -69,6 +69,7 @@ function removeLogic(title) {
         let itemDiv = document.getElementById("item-" + title);
         itemDiv.parentElement.remove();
         countItems();
+        finalTotal();
     };
 };
 
@@ -77,10 +78,6 @@ btnCart.addEventListener('click', () => {
     cart.classList.add('cart-active');
     const cartBasket = document.getElementById("cart-content");
     cartBasket.innerHTML = '';
-    // set for final total
-    let finalTotal = document.getElementById("final-total");
-    finalTotal.innerHTML = 0.00;
-
     let c = getCookie("cart");
     if (c == null) {
         // nothing in the cookie, cart is empty
@@ -93,10 +90,6 @@ btnCart.addEventListener('click', () => {
             let element = document.createElement('div');
             element.innerHTML = newProductElement;
             cartBasket.append(element);
-            // getting final total
-            let itemPrice = parseFloat(titleToPrice[key] * parseInt(value));
-            finalTotal.innerHTML = (parseFloat(finalTotal.innerHTML) + itemPrice).toFixed(2);
-            console.log(finalTotal.innerHTML);
             // delete function
             const btnRemove = document.getElementById('remove-' + key);
             btnRemove.addEventListener('click', () => {
@@ -104,6 +97,7 @@ btnCart.addEventListener('click', () => {
             });
         };
     };
+    finalTotal();
 });
 
 //close cart
@@ -161,3 +155,21 @@ function countItems(){
     };
 };
 
+// get the final total
+function finalTotal(){
+    let finalTotal = document.getElementById("final-total");
+    finalTotal.innerHTML = 0.00;
+    let c = getCookie("cart");
+    if (c == null) {
+        // nothing in the cookie, cart is empty
+    } else {
+        let obj = JSON.parse(c);
+        // look through all the items in the bag and add to count
+        for (const [key, value] of Object.entries(obj)) {
+            // getting final total
+            let itemPrice = parseFloat(titleToPrice[key] * parseInt(value));
+            finalTotal.innerHTML = (parseFloat(finalTotal.innerHTML) + itemPrice).toFixed(2);
+            console.log(finalTotal.innerHTML);
+        };
+    };
+};
