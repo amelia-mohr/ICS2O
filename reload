@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pkill flask
+FLASK_APP=finalproject/python/python.py
+flask run &
