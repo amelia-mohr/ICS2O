@@ -52,7 +52,7 @@ sendBtn.addEventListener('click', () => {
         let obj = JSON.parse(c);
 
         obj['first'] = fName.value;
-        obj['last'] = fName.value;
+        obj['last'] = lName.value;
         
         console.log(obj);
     };
