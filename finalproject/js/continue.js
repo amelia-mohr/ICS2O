@@ -49,6 +49,8 @@ sendBtn.addEventListener('click', () => {
         // nothing in the cookie, cart is empty
         return;
     } else {
+        c['first'] = fName.value;
+        c['last'] = fName.value;
         let obj = JSON.parse(c);
         console.log(obj);
     };
