@@ -40,16 +40,16 @@ function getCookie(cname) {
 }
 
 sendBtn.addEventListener('click', () => {
-    if (fName.value == null || lName.value == null) {
+    if (fName.value.trim().length == 0) {
+        console.log("No first name")
         return;
-    } else{
-        let c = getCookie("cart");
-        if (c == null) {
-            // nothing in the cookie, cart is empty
-            return;
-        } else {
-            let obj = JSON.parse(c);
-            console.log(obj);
-        };
     }
+    let c = getCookie("cart");
+    if (c == null) {
+        // nothing in the cookie, cart is empty
+        return;
+    } else {
+        let obj = JSON.parse(c);
+        console.log(obj);
+    };
 });
