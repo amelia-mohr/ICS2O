@@ -13,4 +13,4 @@ def order():
     app.logger.warning(request_data)
     with open("orders.txt", "a") as file:
         file.write(json.dumps(request_data) + "\n")
-    return 'HELLOOOOOOOOOOOOOO!!!!!'
+    return 'test'
