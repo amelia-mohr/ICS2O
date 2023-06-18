@@ -329,6 +329,10 @@ nav img{
   flex-basis: 30%;
   position: relative;
   overflow: hidden;
+  box-shadow: none;
+  margin-bottom: 0;
+  width: 100%;
+  display: block;
 }
 .col-2 .small-img-col{
   flex-basis: 30%;
