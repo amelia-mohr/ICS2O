@@ -61,9 +61,9 @@ btnAddBag3.addEventListener('click', () => {
             if (key == 'Product3') {
                 let total = parseInt(value) + parseInt(num.innerHTML);
                 if (total > 9) {
-                    total = 9;
+                    total = '9';
                 };
-                obj['Product3'] = total;
+                obj['Product3'] = total.toString();
                 found = true;
             };
         };
