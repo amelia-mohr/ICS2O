@@ -11,10 +11,10 @@ titleToPrice['Product4'] = 20.00;
 
 // title to image
 var titleToImage = {};
-titleToImage['Product1'] = "puppic1.jpg";
-titleToImage['Product2'] = "puppic2.jpg";
-titleToImage['Product3'] = "puppic3.jpg";
-titleToImage['Product4'] = "puppic1.jpg";
+titleToImage['Product1'] = "dark_blue_front.jpeg";
+titleToImage['Product2'] = "one_egg.jpeg";
+titleToImage['Product3'] = "bubbletea_1.jpeg";
+titleToImage['Product4'] = "octopus_front.jpeg";
 
 // title to product name
 var titleToProduct = {};
