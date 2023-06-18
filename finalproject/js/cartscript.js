@@ -169,7 +169,6 @@ function finalTotal(){
             // getting final total
             let itemPrice = parseFloat(titleToPrice[key] * parseInt(value));
             finalTotal.innerHTML = (parseFloat(finalTotal.innerHTML) + itemPrice).toFixed(2);
-            console.log(finalTotal.innerHTML);
         };
     };
 };
