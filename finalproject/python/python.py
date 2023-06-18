@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
 import logging
+import json
 
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
@@ -11,5 +12,5 @@ def order():
     request_data = request.get_json()
     app.logger.warning(request_data)
     with open("orders.txt", "a") as file:
-        file.write(request_data)
+        file.write(json.dumps(request_data))
     return 'HELLOOOOOOOOOOOOOO!!!!!'
