@@ -1,6 +1,6 @@
 const sendBtn = document.getElementById('send');
-const fName = document.getElementById('fName');
-const lName = document.getElementById('lName');
+const fName = document.getElementById('fname');
+const lName = document.getElementById('lname');
 
 // title to price
 var titleToPrice = {};
