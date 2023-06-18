@@ -25,9 +25,6 @@ layer[0].onclick = function(){
 layer[1].onclick = function(){
     largeImg.src = smallImg[1].src;
 }
-layer[2].onclick = function(){
-    largeImg.src = smallImg[2].src;
-};
 const num = document.getElementById("num");
 const add = document.getElementById("add");
 const sub = document.getElementById("sub");
