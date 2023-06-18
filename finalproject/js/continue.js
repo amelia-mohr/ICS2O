@@ -43,9 +43,8 @@ sendBtn.addEventListener('click', () => {
         return;
     } else {
         let obj = JSON.parse(c);
-
+        // replace Pro# with actual name
         for (const [key, value] of Object.entries(obj)) {
-            // replace Pro# with actual name
             let name = titleToProduct[key];
             obj[name] = obj[key];
             delete obj[key];
