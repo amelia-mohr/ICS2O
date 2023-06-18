@@ -58,7 +58,7 @@ sendBtn.addEventListener('click', () => {
 
         // Creating a XHR object
         let xhr = new XMLHttpRequest();
-        let url = "/python";
+        let url = "/python/";
         // open a connection
         xhr.open("POST", url, true);
         // Set the request header i.e. which type of content you are sending
