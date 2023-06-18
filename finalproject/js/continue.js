@@ -9,13 +9,6 @@ titleToPrice['Product2'] = 6.00;
 titleToPrice['Product3'] = 5.00;
 titleToPrice['Product4'] = 20.00;
 
-// title to image
-var titleToImage = {};
-titleToImage['Product1'] = "whale/dark_blue_front.jpeg";
-titleToImage['Product2'] = "egg/one_egg.jpeg";
-titleToImage['Product3'] = "bubbletea/bubbletea_1.jpeg";
-titleToImage['Product4'] = "octopus/octopus_front.jpeg";
-
 // title to product name
 var titleToProduct = {};
 titleToProduct['Product1'] = "Whale";
@@ -51,6 +44,13 @@ sendBtn.addEventListener('click', () => {
     } else {
         let obj = JSON.parse(c);
 
+        for (const [key, value] of Object.entries(obj)) {
+            // replace Pro# with actual name
+            let name = titleToProduct[key];
+            obj[name] = obj[key];
+            delete obj[key];
+        };
+        // add user name to cookie
         obj['first'] = fName.value;
         obj['last'] = lName.value;
         
