@@ -27,7 +27,6 @@ function getCookie(cname) {
 
 sendBtn.addEventListener('click', () => {
     if (fName.value.trim().length == 0 || lName.value.trim().length == 0) {
-        console.log("No first name")
         return;
     }
     let c = getCookie("cart");
