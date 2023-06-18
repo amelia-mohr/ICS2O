@@ -42,14 +42,14 @@ function getCookie(cname) {
 sendBtn.addEventListener('click', () => {
     if (fName.value == null || lName.value == null) {
         return;
+    } else{
+        let c = getCookie("cart");
+        if (c == null) {
+            // nothing in the cookie, cart is empty
+            return;
+        } else {
+            let obj = JSON.parse(c);
+            console.log(obj);
+        };
     }
-
-    let c = getCookie("cart");
-    if (c == null) {
-        // nothing in the cookie, cart is empty
-        return;
-    } else {
-        let obj = JSON.parse(c);
-        console.log(obj);
-    };
 });
