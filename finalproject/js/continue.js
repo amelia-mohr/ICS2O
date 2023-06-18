@@ -2,13 +2,6 @@ const sendBtn = document.getElementById('send');
 const fName = document.getElementById('fname');
 const lName = document.getElementById('lname');
 
-// title to price
-var titleToPrice = {};
-titleToPrice['Product1'] = 7.00;
-titleToPrice['Product2'] = 6.00;
-titleToPrice['Product3'] = 5.00;
-titleToPrice['Product4'] = 20.00;
-
 // title to product name
 var titleToProduct = {};
 titleToProduct['Product1'] = "Whale";
