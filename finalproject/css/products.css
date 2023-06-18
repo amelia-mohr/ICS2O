@@ -325,6 +325,11 @@ nav img{
   display: flex;
   justify-content: space-between;
 }
+.col-2 .small-img-col-empty{
+  flex-basis: 30%;
+  position: relative;
+  overflow: hidden;
+}
 .col-2 .small-img-col{
   flex-basis: 30%;
   cursor: pointer;
