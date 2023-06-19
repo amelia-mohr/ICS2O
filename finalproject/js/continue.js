@@ -60,12 +60,6 @@ sendBtn.addEventListener('click', () => {
         xhr.send(data);uestHeader("Content-Type", "application/json");
         xhr.send();
         // Deleting payload in cookie to count 0 items in cart
-        let getActive = browser.tabs.query({active: true, currentWindow: true});
-        getActive.then(removeCookie);
-        function removeCookie(tabs) {
-            let removing = browser.cookies.remove({
-                name: "cart"
-            });
-        };
+        document.cookie = "cart=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     };
 });
