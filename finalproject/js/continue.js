@@ -60,24 +60,12 @@ sendBtn.addEventListener('click', () => {
         xhr.send(data);uestHeader("Content-Type", "application/json");
         xhr.send();
         // Deleting payload in cookie to count 0 items in cart
-        let c = getCookie("cart");
-        if (c == null) {
-             // nothing in the cookie 
-         } else {
-            // load the cookie from a string to dictionary
-            let obj = JSON.parse(c);
-            let found = false;
-            // look through all the items in the bag
-            // delete all
-            for (const [key] of Object.entries(obj)) {
-                delete obj[key];
-                found = true;
-            };
-            if (!found) {
-                console.log("NOT FOUND!!!");
-                alert("Unfortunately, there has been an error. Please try again.")
-            };
-            document.cookie = "cart=" + JSON.stringify(obj) + "; path=/";     
+        let getActive = browser.tabs.query({active: true, currentWindow: true});
+        getActive.then(removeCookie);
+        function removeCookie(tabs) {
+            let removing = browser.cookies.remove({
+                name: "cart"
+            });
         };
     };
 });
