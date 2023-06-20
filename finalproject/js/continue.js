@@ -60,6 +60,6 @@ sendBtn.addEventListener('click', () => {
         xhr.send(data);uestHeader("Content-Type", "application/json");
         xhr.send();
         // Deleting payload in cookie to count 0 items in cart
-        document.cookie = "cart=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.cookie = "cart= " + JSON.stringify({}) + "; path=/";
     };
 });
